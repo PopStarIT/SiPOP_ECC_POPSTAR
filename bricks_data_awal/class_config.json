@@ -1,0 +1,249 @@
+{
+    "3": {
+        "report": {
+            "trial_balance": 19,
+            "balance_sheet": 20,
+            "profit_and_loss": 21,
+            "supplier_aged": 118,
+            "customer_aged": 119,
+            "tracing_supplier_payment": 120,
+            "tracing_customer_payment": 121,
+            "cashflow": 22
+        },
+        "maintenance": {
+            "bank": 12,
+            "fixed_asset_list": 101,
+            "chartofaccount": 6,
+            "tag": 11,
+            "account_group": 8,
+            "budget": 9,
+            "project": 10,
+            "account_section": 7
+        },
+        "transaction": {
+            "bank_transfer": 66,
+            "supplier_invoice": 70,
+            "supplier_payment": 71,
+            "supplier_credit_note": 72,
+            "customer_invoice": 73,
+            "customer_payment": 74,
+            "customer_credit_note": 75,
+            "journal_entry": 4,
+            "fixed_asset_purchase": 102,
+            "bank_deposit": 24,
+            "bank_payment": 23,
+            "journal_inquiry": 106,
+            "account_inquiry": 107
+        },
+        "0": {
+            "accounting": 3
+        }
+    },
+    "4": {
+        "inventory": {
+            "item_category": 29,
+            "item": 30,
+            "item_detail": 33,
+            "uom": 67,
+            "package": 68,
+            "hs_code": 79,
+            "inventory": 27,
+            "warehouse": 28
+        },
+        "general": {
+            "taxes": 31,
+            "tax_group": 32,
+            "kppbc": 69,
+            "currencies_rate": 76,
+            "port": 78,
+            "general": 25,
+            "currencies": 26
+        },
+        "manufacture": {
+            "manufacture": 34,
+            "work_center": 35,
+            "work_process": 36,
+            "bill_of_material_process": 38,
+            "bill_of_material": 37
+        },
+        "purchase": {
+            "purchase": 39,
+            "supplier": 40
+        },
+        "sales": {
+            "sales": 41,
+            "customer": 42
+        },
+        "user_security": {
+            "security_module": 93,
+            "security_token": 92,
+            "security_role": 94,
+            "user_management": 95
+        },
+        "0": {
+            "settings": 13
+        }
+    },
+    "6": {
+        "purchase_request": {
+            "purchase_request": 43
+        },
+        "purchase_order": {
+            "purchase_order": 44
+        },
+        "memo_purchase": {
+            "memo_purchase": 45
+        },
+        "purchase_performa": {
+            "purchase_performa": 46
+        },
+        "monitoring_po": {
+            "monitoring_po": 129
+        },
+        "0": {
+            "purchase": 15
+        }
+    },
+    "8": {
+        "subcon": {
+            "subcon": 58,
+            "subcon_in": 90,
+            "subcon_out": 91,
+            "monitoring_subcon": 131,
+            "subcon_production": 142
+        },
+        "custom_import": {
+            "custom_import": 47
+        },
+        "general": {
+            "general": 48,
+            "local_sales_transfer": 77,
+            "inventory_transfer": 50,
+            "stock_adjustment": 52,
+            "stock_opname": 53,
+            "delivery": 54,
+            "inventory_reject": 55,
+            "disposal": 56,
+            "good_receive": 49,
+            "consumable": 100,
+            "assets": 109
+        },
+        "manufacture": {
+            "production_transfer": 51,
+            "manufacture": 59,
+            "production_plan": 60,
+            "production_request": 61,
+            "production": 62,
+            "scrap": 96,
+            "return_material": 97,
+            "subcon": 98,
+            "costing": 99,
+            "costing_period": 105,
+            "monitoring_order": 122
+        },
+        "custom_export": {
+            "custom_export": 57
+        },
+        "0": {
+            "inventory": 17
+        }
+    },
+    "7": {
+        "sales_order": {
+            "sales_order": 63
+        },
+        "memo_sales": {
+            "memo_sales": 64
+        },
+        "sales_performa": {
+            "sales_performa": 65
+        },
+        "0": {
+            "sales": 16
+        }
+    },
+    "9": {
+        "internal_report": {
+            "internal_report": 81,
+            "tracing_sumber_pemasukan": 103,
+            "tracing_pengeluaran_dokumen": 104,
+            "production_transfer": 123,
+            "penerimaan_barang_jadi": 124,
+            "penerimaan_reject": 125,
+            "penerimaan_scrap": 126,
+            "realisasi_import": 130
+        },
+        "external_report": {
+            "external_report": 80,
+            "pabean_out": 84,
+            "mutasi_wip": 85,
+            "mutasi_bahan_baku": 86,
+            "mutasi_scrap": 87,
+            "mutasi_barang_jadi": 88,
+            "mutasi_mesin": 89,
+            "pabean_in": 83,
+            "log_users": 108,
+            "mutasi_hasil_produksi_kite": 111,
+            "pemakaian_bahan_baku_kite": 112,
+            "pemakaian_barang_subkon_kite": 113,
+            "pemasukan_bahan_baku_kite": 114,
+            "pemasukan_hasil_produksi_kite": 115,
+            "pengeluaran_hasil_produksi_kite": 116,
+            "penyelesaian_scrap_kite": 117,
+            "mutasi_bahan_baku_kite": 110,
+            "persediaan_barang_kite": 127,
+            "penjualan_barang_kite": 128
+        },
+        "0": {
+            "report": 18
+        }
+    },
+    "2": [
+        {
+            "security": 82,
+            "users": 2
+        }
+    ],
+    "10": [
+        {
+            "loader": 5
+        }
+    ],
+    "5": [
+        {
+            "utilities": 14
+        }
+    ],
+    "12": {
+        "ppb_kb_out": {
+            "ppb_kb_out": 133
+        },
+        "ppb_kb_in": {
+            "ppb_kb_in": 134
+        },
+        "0": {
+            "ppb_kb": 132
+        },
+        "good_receive": {
+            "good_receive": 136
+        },
+        "delivery": {
+            "delivery": 135
+        },
+        "assets": {
+            "assets": 137
+        },
+        "stock_adjustment": {
+            "stock_adjustment": 138
+        },
+        "report": {
+            "ppb_kb_in": 139,
+            "ppb_kb_out": 140
+        }
+    },
+    "1": [
+        {
+            "home": 1
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+	"1":{
+		"name":"Purchase"
+		,"icon":"fa fa-shopping-basket"
+		,"method_id":25
+		,"parent_id":0
+		,"child":{}
+		,"last_id":3
+	},
+	"2":{
+		"name":"Sales"
+		,"icon":"fa fa-line-chart"
+		,"method_id":26
+		,"parent_id":0
+		,"child":{}
+	},
+	"3":{
+		"name":"Inventory"
+		,"icon":"fa fa-archive"
+		,"method_id":27
+		,"parent_id":0
+		,"child":{}
+	},
+	"4":{
+		"name":"Accounting"
+		,"icon":"fa fa-pie-chart"
+		,"method_id":7
+		,"parent_id":0
+		,"child":{}
+	},
+	"5":{
+		"name":"Reports"
+		,"icon":"fa fa-files-o"
+		,"method_id":28
+		,"parent_id":0
+		,"child":{}
+	},
+	"6":{
+		"name":"Settings"
+		,"icon":"fa fa-gear"
+		,"method_id":23
+		,"parent_id":0
+		,"child":{}
+	},
+	"6":{
+		"name":"Utilities"
+		,"icon":"fa fa-gears"
+		,"method_id":24
+		,"parent_id":0
+		,"child":{}
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "accounting": 3,
+    "settings": 4,
+    "purchase": 6,
+    "inventory": 8,
+    "sales": 7,
+    "report": 9,
+    "users": 2,
+    "loader": 10,
+    "utilities": 5,
+    "home": 1
+}

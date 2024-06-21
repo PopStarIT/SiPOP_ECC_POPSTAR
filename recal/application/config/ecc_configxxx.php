@@ -1,0 +1,6 @@
+<?php
+// Encrypted By BricksApp PHP  
+// Author : Nizar Rahmat 
+$encoded = "Pz48P2N1YyAgdnMgKCFxcnN2YXJxKCdPTkZSQ05HVScpKSBya3ZnKCdBYiBxdmVycGcgZnBldmNnIG5wcHJmZiBueXlianJxJyk7DQokcGJhc3Z0WydDQkVHTllfQ0JFRyddID0gIjg1ODUiOw0KcXJzdmFyKCdDVF9VQkZHJywgJzEyNy4wLjAuMScpOw0KcXJzdmFyKCdDVF9DQkVHJywgJzU0MzMnKTsNCnFyc3ZhcignQ1RfUU8nLCAnUlBQX1FSSVJZQkNaUkFHX0FSSicpOw0KcXJzdmFyKCdDVF9IRlJFJywgJ2NiZmd0ZXJmJyk7DQpxcnN2YXIoJ0NUX0NORkYnLCAncTV5QjNzdjk4RFZvQUV2WDZ5djVoRD09Jyk7DQo=";
+eval(simple_decrypt($encoded, __FILE__));
+?>

@@ -1,0 +1,300 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xl-12">
+			<div class="card card-statistics"> 
+				<div class="card-body">
+					<div class="row">
+						<div class="col-xl-12">
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+									
+											<?php echo $page_title ?>
+										</h5>
+									</div>
+								
+									<div  class="tab-pane collapse show" data-parent="#accordion" id="content_<?php echo $methodid; ?>_dashboard" role="tabpanel"  aria-labelledby="tab_<?php echo $methodid; ?>_dashboard">
+									<div class="row">
+		                               <div class="col-xl-12">
+			                             <div class="tab tab-border">
+										   <div class="tab-content">
+										    <div class="tab_custom_ecc tab-pane fade active show" id="content_M" role="tabpanel">
+											 <div class="row">
+											  <div class="col-xl-8">
+												   <div class="form-group form-inline row">
+												    	<div class="input-group">
+															<div class="input-group-prepend">
+																<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+															</div>
+															<input class="form-control" id="form_<?php echo $methodid ?>_date_start"  name="date_start" type="text" value="<?php echo date("Y-m-d") ?>" />
+														</div>
+														 S/D &nbsp &nbsp
+														 <div class="input-group">
+															<div class="input-group-prepend">
+																<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+															</div>
+															<input class="form-control" id="form_<?php echo $methodid ?>_date_end"  name="date_end" type="text" value="<?php echo date("Y-m-d") ?>" />
+														</div>
+
+														 &nbsp &nbsp									   
+														<button type="button" class="btn btn-default" onclick="javascript:search_dashboard_<?php echo $methodid ?>();">
+														<i class="fa fa-search"></i> Search
+														</button> 
+													 </div>
+												 </div>
+											</div>
+											<?php// var_dump($responce); ?>
+											
+										     <div class="row">
+									          <div class="col-xl-3 col-lg-6 col-md-6">
+										        <a href="#" class="tile tile-danger tile-valign" data-toggle="modal" data-target="#view_modal_M">
+												<div class="att att-absen">M-Absen Tanpa keterangan</div>
+												<span class="fa fa-bed"></span>
+												<div class="att att-absen dir-att" id="ket_<?php echo $methodid ?>_M">
+												<?php echo $jumlah_M ?>
+												</div>
+												</a>
+									          </div>
+											  
+											   <div class="col-xl-3 col-lg-6 col-md-6">
+										        <a href="#" class="tile tile-success tile-valign" data-toggle="modal" data-target="#view_modal_S">
+												<div class="att att-absen">S-Sakit</div>
+												<span class="fa fa-hospital-o"></span>
+												<div class="att att-absen dir-att" id="ket_<?php echo $methodid ?>_S"><?php echo $jumlah_S ?></div>
+												</a>
+									          </div>
+											  
+											   <div class="col-xl-3 col-lg-6 col-md-6">
+										        <a href="#" class="tile tile-info tile-valign" data-toggle="modal" data-target="#view_modal_C">
+												<div class="att att-absen">CT-Cuti</div>
+												<span class="fa fa-handshake-o"></span>
+												<div class="att att-absen dir-att" id="ket_<?php echo $methodid ?>_C"><?php echo $jumlah_cuti ?></div>
+												</a>
+									           </div>
+											  
+											   <div class="col-xl-3 col-lg-6 col-md-6">
+										        <a href="#" class="tile tile-warnalain tile-valign" data-toggle="modal" data-target="#view_modal_P3">
+												<div class="att att-absen">P3-Ijin Tak Terduga</div>
+												<span class="fa fa-medkit"></span>
+												<div class="att att-absen dir-att" id="ket_<?php echo $methodid ?>_P3"><?php echo $jumlah_P3 ?></div>
+												</a>
+									           </div>
+											  
+											  </div>
+											  
+											
+											      <div class="row">
+												  <div class="col-xl-9 col-md-12 col-lg-12" >
+												   <!-- <div class="col-xs-12 col-lg-9 col-md-12 col-sm-12"> -->
+												     <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+												   
+                                                    <canvas id="content_<?php echo $methodid ?>_chart"></canvas>
+												    </div>
+												  
+												 </div>
+												 <div class="col-xl-3" >
+											     <div class="col-xl-12 col-lg-12 col-md-12">
+										           <a href="javascript:add_tab('1057','Report','<?php echo $data_method['1057']['link'] ?>','fa fa-file-text')" class="tile tile-info tile-valign" >
+												   <div class="att att-absen">Attendance & Report</div>
+												   <span class="fa fa-list"></span>
+												   <div class="att att-absen dir-att"></div>
+												   </a>
+									            </div>
+												
+												<!--<div class="col-xl-12 col-lg-12 col-md-12">
+												<?php //var_dump($data_method[); ?>
+												<a href=\"javascript:add_tab(". $tab_content['method_id'] .", '". $tab_content['menu_name'] ."' , '". $data_method[$tab_content['method_id']]['link'] ."','". $tab_content['menu_icon'] ."');\" class=\"tile tile-primary tile-valign\"> 
+										           <a href="javascript:add_tab('1045','Dashboard',' echo $data_method['1045']['link'] ?>','fa fa-file-text')" class="tile tile-info tile-valign" >
+												   <div class="att att-absen">Attendance Report</div>
+												   <span class="fa fa-file-text"></span>
+												   <div class="att att-absen dir-att">10</div>
+												   </a>
+									            </div> -->
+												
+												</div>
+										      </div>
+											  
+											  	
+											  
+											 </div>
+									
+										   </div>
+										  </div>
+									    </div>
+									  </div>
+									</div>
+									
+							
+																
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+<!-- dibawah code dari data yang lama untuk proses upload excel -->
+<!-- jika tidak digunakan silakan hapus -->
+
+</div>
+
+<div class="modal fade" id="view_modal_M" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Keterangan M-Absen tanpa keterangan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+		  <form class="ui grid ecc_form" id="form_<?php echo $methodid ?>_modal_coba" action="javascript:addx_<?php echo $methodid ?>_absen()">
+           	</form>
+			  <div class="row">
+                <div class="col-xl-12">
+                 <table id="table_<?php echo $methodid ?>_keterangan_M"></table>
+                 <div id="ptable_<?php echo $methodid ?>_keterangan_M"></div>                                                     
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal fade" id="view_modal_S" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Keterangan S-Sakit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+		     <div class="row">
+                <div class="col-xl-12">
+                 <table id="table_<?php echo $methodid ?>_keterangan_S"></table>
+                 <div id="ptable_<?php echo $methodid ?>_keterangan_S"></div>                                                     
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal fade" id="view_modal_C" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Keterangan C-Cuti</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+		     <div class="row">
+                <div class="col-xl-12">
+                 <table id="table_<?php echo $methodid ?>_keterangan_C"></table>
+                 <div id="ptable_<?php echo $methodid ?>_keterangan_C"></div>                                                     
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal fade" id="view_modal_CL" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Keterangan C-Cuti Melahirkan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+		     <div class="row">
+                <div class="col-xl-12">
+                 <table id="table_<?php echo $methodid ?>_keterangan_CL"></table>
+                 <div id="ptable_<?php echo $methodid ?>_keterangan_CL"></div>                                                     
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal fade" id="view_modal_P3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Keterangan P3-Ijin Tak Terduga</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+		     <div class="row">
+                <div class="col-xl-12">
+                 <table id="table_<?php echo $methodid ?>_keterangan_P3"></table>
+                 <div id="ptable_<?php echo $methodid ?>_keterangan_P3"></div>                                                     
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+</div>
+ 
+<script type="text/javascript">
+//content_<?php echo $methodid ?>_chart
+    //var ctx  = $("#content_<?php echo $methodid ?>_chart").getContext('2d');
+	
+	 var ctx = document.getElementById('content_<?php echo $methodid ?>_chart').getContext('2d');
+ 	 // alert (ctx);
+	 var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+        // The data for our dataset
+        data: {
+            labels: ['M-(Absen)','S-Sakit','C-cuti','CL-cuti lahir','P2-ijin','P3','Ip'],
+            datasets: [{
+                label:'M',
+                backgroundColor: ['rgb(255, 99, 132)', 'rgba(56, 86, 255, 0.87)', 'rgb(60, 179, 113)','rgb(175, 238, 239)','rgb(184, 134, 11)','rgb (169, 169, 169)',
+				                  'rgb(85, 107, 47)'],
+                borderColor: ['rgb(255, 99, 132)'],
+                data: ['<?php echo $jumlah_M ?>','<?php echo $jumlah_S ?>','<?php echo $jumlah_cuti ?>','<?php echo $jumlah_cuti_lahir ?>',
+				       '<?php echo $jumlah_P2 ?>','<?php echo $jumlah_P3 ?>','<?php echo $jumlah_IP ?>' ]
+            }]
+        },
+        // Configuration options go here
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+     });
+</script>

@@ -1,0 +1,5 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2012-08-06 23:35:36 --> Severity: Warning  --> SoapClient::SoapClient(http://localhost:8282/CyberC/PHPService?wsdl) [<a href='soapclient,soapclient'>soapclient,soapclient</a>]: failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond,
+ C:\xampp\htdocs\application\helpers\connectws_helper,php 46
+ERROR - 2012-08-06 23:35:36 --> Severity: Warning  --> SoapClient::SoapClient() [<a href='soapclient,soapclient'>soapclient,soapclient</a>]: I/O warning : failed to load external entity &quot;http://localhost:8282/CyberC/PHPService?wsdl&quot; C:\xampp\htdocs\application\helpers\connectws_helper,php 46

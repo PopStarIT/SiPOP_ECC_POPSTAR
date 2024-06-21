@@ -1,0 +1,116 @@
+<?php if(isset($dashboard_table)) { ?>
+	<?php 
+		$columnDefs = array();
+		$data_field = array();
+		if(isset($dashboard_table['field'])) {
+			foreach($dashboard_table['field'] as $key => $dt_field){
+				$row_field = array();
+				$row_field['targets'] = $key;
+				$row_field['name'] = $dt_field['field'];
+				if(isset($dt_field['title'])){
+					$row_field['title'] = $dt_field['title'];
+				} else {
+					$row_field['title'] = strtoupper(str_replace('_',' ',$dt_field['field']));
+				}
+				
+				if(isset($dt_field['visible'])){
+					$row_field['visible'] = $dt_field['visible'];
+				}
+				
+				if(isset($dt_field['className'])){
+					$row_field['className'] = $dt_field['className'];
+				} else {
+					$row_field['className'] = 'nowrap';
+				}
+				
+				
+				$data_field[] = $row_field;
+			}
+			$columnDefs = $data_field;
+		} 
+		$columnDefs = json_encode($columnDefs);
+		
+	?>
+	
+	<script type="text/javascript">  
+		// $(document).ready(function() {
+			var data_table_<?php echo $methodid ?>;
+			
+			var columnDefs = <?php echo $columnDefs ?>;
+			$('#table_<?php echo $methodid ?> thead tr').clone(true).appendTo( '#table_<?php echo $methodid ?> thead' );
+			$('#table_<?php echo $methodid ?> thead tr:eq(1) th').each( function (i) {
+				var title = $(this).text();
+				$(this).html( '<input class="form-control" type="text" placeholder="'+title+'" />' );
+		 
+				$( 'input', this ).on( 'keyup change', function () {
+					if ( table_<?php echo $methodid ?>.api().column(i).search() !== this.value ) {
+						table_<?php echo $methodid ?>.api()
+							.column(i)
+							.search( this.value )
+							.draw();
+					}
+				} );
+			} );
+					 
+			var table_<?php echo $methodid ?> = $('#table_<?php echo $methodid ?>').dataTable({
+				"dom": "<'row'<'col-sm-12'tr>>" +"<'row'<'col-sm-12 col-md-4'l><'col-sm-12 col-md-4'i><'col-sm-12 col-md-4'p>>",
+				"pagingType": "full_numbers",
+				"processing": true,
+				"serverSide": true,
+				"searching": true,
+				orderCellsTop: true,
+				fixedHeader: true,
+				"scrollX": true,
+				"scrollY": "300px",
+				"scrollCollapse": true,
+				"ajax": {
+					"url": baseurl+'<?php echo $class_uri ?>/loaddata',
+					"type": "POST",
+					"data": function ( d ) {
+						d.<?php echo $this->security->get_csrf_token_name() ?> = "<?php echo $this->security->get_csrf_hash() ?>";
+						<?php if(isset($search_param)){ ?>
+						d.<?php echo $search_param ?> = "<?php echo $search_param_value ?>";
+						<?php }?>
+						var dt_params = $('#table_<?php echo $methodid ?>').data('dt_params');
+						// Add dynamic parameters to the data object sent to the server
+						if(dt_params){ $.extend(d, dt_params); }
+					}
+				},
+				"order": [0, 'desc'],
+				"columnDefs": columnDefs,
+				fnDrawCallback: function() {
+				   setTimeout(function(){$('.tab_scrollbar').getNiceScroll().resize();}, 100);
+				}
+			});
+			
+			$('#table_<?php echo $methodid ?> tbody').on( 'click', 'tr', function () {
+				data_table_<?php echo $methodid ?> = table_<?php echo $methodid ?>.api().row(this).data();
+				
+				if ($(this).hasClass('selected')) {
+					//$(this).removeClass('selected');
+				} else {
+					table_<?php echo $methodid ?>.$('tr.selected').removeClass('selected');
+					$(this).addClass('selected');
+				}
+			});
+		// });	
+	</script>
+	
+	
+	<?php 
+		if(isset($dashboard_table['nav_button'])) {
+			foreach($dashboard_table['nav_button'] as $dt_nav_button) {
+				$permision = $this->authentication->permission_check($dt_nav_button['method_id']);
+				if($permision){
+					if(isset($dt_nav_button['load'])){
+						$component = array();
+						$component['function'] = $dt_nav_button['method_id'] ."_". $data_method[$dt_nav_button['method_id']]['method'];
+						
+						$this->load->view('javascript/'.$dt_nav_button['load'],$component);
+					}
+				}
+			}
+		} 
+	?>
+	
+<?php } ?>

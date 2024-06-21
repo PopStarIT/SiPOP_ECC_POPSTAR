@@ -1,0 +1,32 @@
+<?php if(isset($dashboard_table)) { ?>
+	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+		<div class="card-body">
+		
+			<?php if(isset($dashboard_table['nav_button'])) { ?>
+				<div class="row">
+					<div class="col-xl-12">
+						<?php 
+					    // var_dump($dashboard_table['nav_button'] );
+							foreach($dashboard_table['nav_button'] as $dt_nav_button) {
+								$permision = $this->authentication->permission_check($dt_nav_button['method_id']);
+								if($permision){
+									echo "<button type=\"button\" class=\"btn btn-default mb-1\" onclick=\"javascript:nav_button_".$dt_nav_button['method_id'] ."_". $data_method[$dt_nav_button['method_id']]['method']."();\">";
+									echo "<i class=\"". $dt_nav_button['icon'] ."\"></i> ".$dt_nav_button['title'];
+									echo "</button> ";
+								}
+							}
+						?>                                                             
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xl-12">
+		
+			<table id="table_<?php echo $methodid ?>"></table>
+			<div id="ptable_<?php echo $methodid ?>"></div>                                                     
+		</div>
+	</div>
+<?php } ?>

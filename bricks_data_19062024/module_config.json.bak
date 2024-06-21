@@ -1,0 +1,17 @@
+{
+    "accounting": 3,
+    "settings": 4,
+    "purchase": 6,
+    "inventory": 8,
+    "sales": 7,
+    "report": 9,
+    "users": 2,
+    "loader": 10,
+    "utilities": 5,
+    "ppb_kb": 12,
+    "home": 1,
+	"hrd":13,
+	"monitoring":14,
+	"karyawan":15,
+	"loader_pop":16
+}

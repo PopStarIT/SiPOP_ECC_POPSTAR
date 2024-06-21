@@ -1,0 +1,4 @@
+<div id="cobaCetak">
+            <p>Hello World2</p>
+			 <input type="text" id="form_<?php echo $methodid ?>_idabsen" name="idabsen" class="form-control">
+          </div>

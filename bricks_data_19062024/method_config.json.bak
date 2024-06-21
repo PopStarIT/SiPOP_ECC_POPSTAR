@@ -1,0 +1,4326 @@
+{
+    "19": {
+        "index": {
+            "id": 54,
+            "tokenid": 34
+        },
+        "loaddata": {
+            "id": 58,
+            "tokenid": 34
+        },
+        "print_trial_balance": {
+            "id": 896,
+            "tokenid": -1
+        }
+    },
+    "29": {
+        "edit": {
+            "id": 84,
+            "tokenid": 12
+        },
+        "post_add_edit": {
+            "id": 85,
+            "tokenid": 12
+        },
+        "delete": {
+            "id": 86,
+            "tokenid": 12
+        },
+        "index": {
+            "id": 70,
+            "tokenid": 12
+        },
+        "loaddata": {
+            "id": 82,
+            "tokenid": 12
+        },
+        "add": {
+            "id": 83,
+            "tokenid": 12
+        }
+    },
+    "30": {
+        "loaddata": {
+            "id": 87,
+            "tokenid": 13
+        },
+        "add": {
+            "id": 88,
+            "tokenid": 13
+        },
+        "edit": {
+            "id": 89,
+            "tokenid": 13
+        },
+        "post_add_edit": {
+            "id": 90,
+            "tokenid": 13
+        },
+        "delete": {
+            "id": 91,
+            "tokenid": 13
+        },
+        "index": {
+            "id": 71,
+            "tokenid": 13
+        }
+    },
+    "31": {
+        "index": {
+            "id": 92,
+            "tokenid": 4
+        },
+        "loaddata": {
+            "id": 359,
+            "tokenid": 4
+        },
+        "add": {
+            "id": 360,
+            "tokenid": 4
+        },
+        "edit": {
+            "id": 361,
+            "tokenid": 4
+        },
+        "post_add_edit": {
+            "id": 362,
+            "tokenid": 4
+        },
+        "delete": {
+            "id": 363,
+            "tokenid": 4
+        }
+    },
+    "32": {
+        "index": {
+            "id": 93,
+            "tokenid": 5
+        },
+        "loaddata": {
+            "id": 370,
+            "tokenid": 5
+        },
+        "add": {
+            "id": 371,
+            "tokenid": 5
+        },
+        "edit": {
+            "id": 372,
+            "tokenid": 5
+        },
+        "post_add_edit": {
+            "id": 373,
+            "tokenid": 5
+        },
+        "delete": {
+            "id": 374,
+            "tokenid": 5
+        },
+        "loaddata_detail": {
+            "id": 375,
+            "tokenid": 5
+        },
+        "delete_detail": {
+            "id": 377,
+            "tokenid": 5
+        },
+        "post_add_edit_detail": {
+            "id": 376,
+            "tokenid": 5
+        }
+    },
+    "33": {
+        "index": {
+            "id": 94,
+            "tokenid": 14
+        },
+        "add": {
+            "id": 403,
+            "tokenid": 14
+        },
+        "edit": {
+            "id": 404,
+            "tokenid": 14
+        },
+        "post_add_edit": {
+            "id": 405,
+            "tokenid": 14
+        },
+        "delete": {
+            "id": 406,
+            "tokenid": 14
+        },
+        "loaddata": {
+            "id": 402,
+            "tokenid": 14
+        }
+    },
+    "34": {
+        "index": {
+            "id": 95,
+            "tokenid": -1
+        }
+    },
+    "35": {
+        "index": {
+            "id": 96,
+            "tokenid": 15
+        },
+        "loaddata": {
+            "id": 407,
+            "tokenid": 15
+        },
+        "add": {
+            "id": 408,
+            "tokenid": 15
+        },
+        "edit": {
+            "id": 409,
+            "tokenid": 15
+        },
+        "post_add_edit": {
+            "id": 410,
+            "tokenid": 15
+        },
+        "delete": {
+            "id": 411,
+            "tokenid": 15
+        }
+    },
+    "36": {
+        "index": {
+            "id": 97,
+            "tokenid": 16
+        },
+        "loaddata": {
+            "id": 413,
+            "tokenid": 16
+        },
+        "add": {
+            "id": 414,
+            "tokenid": 16
+        },
+        "edit": {
+            "id": 415,
+            "tokenid": 16
+        },
+        "post_add_edit": {
+            "id": 416,
+            "tokenid": 16
+        },
+        "delete": {
+            "id": 417,
+            "tokenid": 16
+        }
+    },
+    "38": {
+        "index": {
+            "id": 99,
+            "tokenid": 18
+        },
+        "edit": {
+            "id": 429,
+            "tokenid": 18
+        },
+        "approve": {
+            "id": 418,
+            "tokenid": 18
+        },
+        "loaddata": {
+            "id": 427,
+            "tokenid": 18
+        },
+        "add": {
+            "id": 428,
+            "tokenid": 18
+        },
+        "post_add_edit": {
+            "id": 430,
+            "tokenid": 18
+        },
+        "delete": {
+            "id": 431,
+            "tokenid": 18
+        },
+        "loaddata_detail": {
+            "id": 432,
+            "tokenid": 18
+        },
+        "post_add_edit_detail": {
+            "id": 433,
+            "tokenid": 18
+        },
+        "delete_detail": {
+            "id": 434,
+            "tokenid": 18
+        },
+        "set_default": {
+            "id": 559,
+            "tokenid": 18
+        },
+        "cancel_approve": {
+            "id": 797,
+            "tokenid": 18
+        }
+    },
+    "39": {
+        "index": {
+            "id": 100,
+            "tokenid": -1
+        }
+    },
+    "40": {
+        "index": {
+            "id": 101,
+            "tokenid": 19
+        },
+        "loaddata": {
+            "id": 444,
+            "tokenid": 19
+        },
+        "add": {
+            "id": 445,
+            "tokenid": 19
+        },
+        "edit": {
+            "id": 446,
+            "tokenid": 19
+        },
+        "post_add_edit": {
+            "id": 447,
+            "tokenid": 19
+        },
+        "delete": {
+            "id": 448,
+            "tokenid": 19
+        }
+    },
+    "41": {
+        "index": {
+            "id": 102,
+            "tokenid": -1
+        }
+    },
+    "42": {
+        "index": {
+            "id": 103,
+            "tokenid": 20
+        },
+        "loaddata": {
+            "id": 449,
+            "tokenid": 20
+        },
+        "add": {
+            "id": 450,
+            "tokenid": 20
+        },
+        "edit": {
+            "id": 451,
+            "tokenid": 20
+        },
+        "post_add_edit": {
+            "id": 452,
+            "tokenid": 20
+        },
+        "delete": {
+            "id": 453,
+            "tokenid": 20
+        }
+    },
+    "43": {
+        "index": {
+            "id": 104,
+            "tokenid": 25
+        },
+        "loaddata": {
+            "id": 131,
+            "tokenid": 25
+        },
+        "add": {
+            "id": 132,
+            "tokenid": 25
+        },
+        "edit": {
+            "id": 133,
+            "tokenid": 25
+        },
+        "delete": {
+            "id": 134,
+            "tokenid": 25
+        },
+        "approve": {
+            "id": 135,
+            "tokenid": 25
+        },
+        "post_add_edit": {
+            "id": 136,
+            "tokenid": 25
+        },
+        "loaddata_detail": {
+            "id": 137,
+            "tokenid": 25
+        },
+        "post_add_edit_detail": {
+            "id": 138,
+            "tokenid": 25
+        },
+        "delete_detail": {
+            "id": 139,
+            "tokenid": 25
+        },
+        "cancel_approve": {
+            "id": 741,
+            "tokenid": 25
+        }
+    },
+    "44": {
+        "index": {
+            "id": 105,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 140,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 141,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 142,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 143,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 144,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 145,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 146,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 147,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 148,
+            "tokenid": -1
+        },
+        "add_from_request": {
+            "id": 149,
+            "tokenid": -1
+        },
+        "loaddata_request_item": {
+            "id": 159,
+            "tokenid": -1
+        },
+        "print_purchase_order": {
+            "id": 489,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 743,
+            "tokenid": -1
+        }
+    },
+    "45": {
+        "index": {
+            "id": 106,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 150,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 151,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 152,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 153,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 154,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 155,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 156,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 157,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 158,
+            "tokenid": -1
+        },
+        "print_memo_purchase": {
+            "id": 560,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 744,
+            "tokenid": -1
+        }
+    },
+    "58": {
+        "loaddata": {
+            "id": 107,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 123,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 124,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 171,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 352,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 364,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 435,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 809,
+            "tokenid": -1
+        }
+    },
+    "47": {
+        "index": {
+            "id": 108,
+            "tokenid": -1
+        },
+        "bc20": {
+            "id": 109,
+            "tokenid": -1
+        },
+        "bc23": {
+            "id": 110,
+            "tokenid": -1
+        },
+        "bc262": {
+            "id": 111,
+            "tokenid": -1
+        },
+        "bc27": {
+            "id": 112,
+            "tokenid": -1
+        },
+        "bc40": {
+            "id": 113,
+            "tokenid": -1
+        },
+        "bc20_add": {
+            "id": 172,
+            "tokenid": -1
+        },
+        "bc20_edit": {
+            "id": 173,
+            "tokenid": -1
+        },
+        "bc20_delete": {
+            "id": 174,
+            "tokenid": -1
+        },
+        "bc20_approve": {
+            "id": 175,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 176,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 177,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 178,
+            "tokenid": -1
+        },
+        "bc20_add_from_performa": {
+            "id": 179,
+            "tokenid": -1
+        },
+        "bc20_add_from_purchase": {
+            "id": 180,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 181,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 182,
+            "tokenid": -1
+        },
+        "loaddata_performa": {
+            "id": 183,
+            "tokenid": -1
+        },
+        "loaddata_purchase": {
+            "id": 184,
+            "tokenid": -1
+        },
+        "bc23_add": {
+            "id": 185,
+            "tokenid": -1
+        },
+        "bc23_edit": {
+            "id": 186,
+            "tokenid": -1
+        },
+        "bc23_delete": {
+            "id": 187,
+            "tokenid": -1
+        },
+        "bc23_approve": {
+            "id": 188,
+            "tokenid": -1
+        },
+        "bc23_add_from_purchase": {
+            "id": 190,
+            "tokenid": -1
+        },
+        "bc262_add": {
+            "id": 191,
+            "tokenid": -1
+        },
+        "bc262_edit": {
+            "id": 192,
+            "tokenid": -1
+        },
+        "bc262_delete": {
+            "id": 193,
+            "tokenid": -1
+        },
+        "bc262_approve": {
+            "id": 194,
+            "tokenid": -1
+        },
+        "bc262_add_from_performa": {
+            "id": 195,
+            "tokenid": -1
+        },
+        "bc262_add_from_purchase": {
+            "id": 196,
+            "tokenid": -1
+        },
+        "bc27_add": {
+            "id": 197,
+            "tokenid": -1
+        },
+        "bc27_edit": {
+            "id": 198,
+            "tokenid": -1
+        },
+        "bc27_delete": {
+            "id": 199,
+            "tokenid": -1
+        },
+        "bc27_approve": {
+            "id": 200,
+            "tokenid": -1
+        },
+        "bc27_add_from_performa": {
+            "id": 201,
+            "tokenid": -1
+        },
+        "bc27_add_from_purchase": {
+            "id": 202,
+            "tokenid": -1
+        },
+        "bc40_add": {
+            "id": 203,
+            "tokenid": -1
+        },
+        "bc40_edit": {
+            "id": 204,
+            "tokenid": -1
+        },
+        "bc40_delete": {
+            "id": 205,
+            "tokenid": -1
+        },
+        "bc40_approve": {
+            "id": 206,
+            "tokenid": -1
+        },
+        "bc40_add_from_performa": {
+            "id": 207,
+            "tokenid": -1
+        },
+        "bc40_add_from_purchase": {
+            "id": 208,
+            "tokenid": -1
+        },
+        "bc23_add_from_contract_subcon": {
+            "id": 593,
+            "tokenid": -1
+        },
+        "loaddata_contract_subcon": {
+            "id": 594,
+            "tokenid": -1
+        },
+        "bc262_add_from_contract_subcon": {
+            "id": 669,
+            "tokenid": -1
+        },
+        "bc27_add_from_contract_subcon": {
+            "id": 670,
+            "tokenid": -1
+        },
+        "send_to_ceisa": {
+            "id": 671,
+            "tokenid": -1
+        },
+        "get_register_no": {
+            "id": 672,
+            "tokenid": -1
+        },
+        "cancel_send_ceisa": {
+            "id": 673,
+            "tokenid": -1
+        },
+        "bc20_cancel_approve": {
+            "id": 746,
+            "tokenid": -1
+        },
+        "bc23_cancel_approve": {
+            "id": 747,
+            "tokenid": -1
+        },
+        "bc262_cancel_approve": {
+            "id": 748,
+            "tokenid": -1
+        },
+        "bc27_cancel_approve": {
+            "id": 749,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 792,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 794,
+            "tokenid": -1
+        },
+        "bc40_add_from_contract_subcon": {
+            "id": 798,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 842,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 843,
+            "tokenid": -1
+        },
+        "bc23_add_from_performa": {
+            "id": 189,
+            "tokenid": -1
+        },
+        "bc40_cancel_approve": {
+            "id": 750,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 783,
+            "tokenid": -1
+        }
+    },
+    "48": {
+        "index": {
+            "id": 114,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 209,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 210,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 211,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 212,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 214,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 215,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 216,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 217,
+            "tokenid": -1
+        },
+        "add_from_request": {
+            "id": 218,
+            "tokenid": -1
+        },
+        "loaddata_request_item": {
+            "id": 219,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 213,
+            "tokenid": -1
+        }
+    },
+    "77": {
+        "delete": {
+            "id": 115,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 344,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 365,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 366,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 367,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 368,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 369,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 558,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 721,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 723,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 724,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 725,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 757,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 720,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 722,
+            "tokenid": -1
+        }
+    },
+    "50": {
+        "index": {
+            "id": 116,
+            "tokenid": -1
+        }
+    },
+    "51": {
+        "index": {
+            "id": 117,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 323,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 510,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 511,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 512,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 513,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 516,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 517,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 518,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 519,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 520,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 557,
+            "tokenid": -1
+        },
+        "print_transfer": {
+            "id": 716,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 730,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 771,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 514,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 515,
+            "tokenid": -1
+        }
+    },
+    "52": {
+        "index": {
+            "id": 118,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 846,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 847,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 848,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 849,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 850,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 851,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 852,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 853,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 864,
+            "tokenid": -1
+        }
+    },
+    "53": {
+        "index": {
+            "id": 119,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 854,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 855,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 856,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 857,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 858,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 859,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 860,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 861,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 865,
+            "tokenid": -1
+        }
+    },
+    "54": {
+        "index": {
+            "id": 120,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 324,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 325,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 326,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 327,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 328,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 329,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 330,
+            "tokenid": -1
+        },
+        "add_from_sales": {
+            "id": 717,
+            "tokenid": -1
+        },
+        "loaddata_custom_item": {
+            "id": 718,
+            "tokenid": -1
+        },
+        "loaddata_sales_item": {
+            "id": 719,
+            "tokenid": -1
+        },
+        "print_delivery": {
+            "id": 732,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 754,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 331,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 332,
+            "tokenid": -1
+        }
+    },
+    "55": {
+        "index": {
+            "id": 121,
+            "tokenid": -1
+        }
+    },
+    "56": {
+        "index": {
+            "id": 122,
+            "tokenid": -1
+        }
+    },
+    "59": {
+        "index": {
+            "id": 125,
+            "tokenid": -1
+        }
+    },
+    "60": {
+        "index": {
+            "id": 126,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 490,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 491,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 492,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 493,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 495,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 497,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 498,
+            "tokenid": -1
+        },
+        "loaddata_forecast_material": {
+            "id": 660,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 494,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 496,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 776,
+            "tokenid": -1
+        },
+        "finish": {
+            "id": 885,
+            "tokenid": -1
+        },
+        "loaddata_material": {
+            "id": 887,
+            "tokenid": -1
+        },
+        "list_material": {
+            "id": 886,
+            "tokenid": -1
+        },
+        "post_forecast_to_purchase": {
+            "id": 889,
+            "tokenid": -1
+        }
+    },
+    "61": {
+        "index": {
+            "id": 127,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 499,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 500,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 501,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 502,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 503,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 504,
+            "tokenid": -1
+        },
+        "loaddata_bom": {
+            "id": 505,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 506,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 507,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 508,
+            "tokenid": -1
+        },
+        "loaddata_detail_total": {
+            "id": 509,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 772,
+            "tokenid": -1
+        },
+        "print_production_request": {
+            "id": 803,
+            "tokenid": -1
+        }
+    },
+    "62": {
+        "index": {
+            "id": 128,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 521,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 523,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 524,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 525,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 526,
+            "tokenid": -1
+        },
+        "loaddata_bom": {
+            "id": 527,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 528,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 529,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 530,
+            "tokenid": -1
+        },
+        "loaddata_detail_total": {
+            "id": 531,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 532,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 533,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 534,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 649,
+            "tokenid": -1
+        },
+        "print_production": {
+            "id": 733,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 770,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 862,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 863,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 522,
+            "tokenid": -1
+        },
+        "forecast_material": {
+            "id": 659,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 779,
+            "tokenid": -1
+        }
+    },
+    "63": {
+        "index": {
+            "id": 129,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 229,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 230,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 231,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 232,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 233,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 234,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 235,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 236,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 237,
+            "tokenid": -1
+        },
+        "print_sales": {
+            "id": 939,
+            "tokenid": 17
+        },
+        "cancel_approve": {
+            "id": 786,
+            "tokenid": -1
+        }
+    },
+    "64": {
+        "index": {
+            "id": 130,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 238,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 239,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 240,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 241,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 242,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 243,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 244,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 245,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 246,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 787,
+            "tokenid": -1
+        }
+    },
+    "46": {
+        "index": {
+            "id": 160,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 161,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 162,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 163,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 164,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 165,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 166,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 167,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 169,
+            "tokenid": -1
+        },
+        "loaddata_order_item": {
+            "id": 170,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 745,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 168,
+            "tokenid": -1
+        }
+    },
+    "37": {
+        "index": {
+            "id": 98,
+            "tokenid": 17
+        },
+        "approve": {
+            "id": 412,
+            "tokenid": 17
+        },
+        "loaddata": {
+            "id": 419,
+            "tokenid": 17
+        },
+        "add": {
+            "id": 420,
+            "tokenid": 17
+        },
+        "edit": {
+            "id": 421,
+            "tokenid": 17
+        },
+        "delete": {
+            "id": 423,
+            "tokenid": 17
+        },
+        "post_add_edit_detail": {
+            "id": 425,
+            "tokenid": 17
+        },
+        "copy_bom": {
+            "id": 833,
+            "tokenid": 17
+        },
+        "post_add_edit": {
+            "id": 422,
+            "tokenid": 17
+        },
+        "loaddata_detail": {
+            "id": 424,
+            "tokenid": 17
+        },
+        "delete_detail": {
+            "id": 426,
+            "tokenid": 17
+        },
+        "cancel_approve": {
+            "id": 796,
+            "tokenid": 17
+        }
+    },
+    "12": {
+        "delete": {
+            "id": 48,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 45,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 46,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 47,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 21,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 22,
+            "tokenid": -1
+        }
+    },
+    "20": {
+        "index": {
+            "id": 55,
+            "tokenid": 35
+        },
+        "loaddata": {
+            "id": 59,
+            "tokenid": 35
+        },
+        "print_balance_sheet": {
+            "id": 897,
+            "tokenid": -1
+        }
+    },
+    "49": {
+        "loaddata": {
+            "id": 220,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 221,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 222,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 223,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 224,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 225,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 227,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 228,
+            "tokenid": -1
+        },
+        "loaddata_custom_item": {
+            "id": 713,
+            "tokenid": -1
+        },
+        "loaddata_purchase_item": {
+            "id": 714,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 715,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 727,
+            "tokenid": -1
+        },
+        "add_from_contract": {
+            "id": 936,
+            "tokenid": -1
+        },
+        "add_from_purchase": {
+            "id": 226,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 751,
+            "tokenid": -1
+        },
+        "print_good_receive": {
+            "id": 804,
+            "tokenid": -1
+        }
+    },
+    "65": {
+        "index": {
+            "id": 247,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 248,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 249,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 250,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 252,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 253,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 254,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 255,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 256,
+            "tokenid": -1
+        },
+        "add_from_request": {
+            "id": 257,
+            "tokenid": -1
+        },
+        "loaddata_order_item": {
+            "id": 258,
+            "tokenid": -1
+        },
+        "print_sales_proforma": {
+            "id": 840,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 251,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 785,
+            "tokenid": -1
+        }
+    },
+    "57": {
+        "index": {
+            "id": 259,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 260,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 261,
+            "tokenid": -1
+        },
+        "loaddata_performa": {
+            "id": 262,
+            "tokenid": -1
+        },
+        "loaddata_purchase": {
+            "id": 263,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 264,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 266,
+            "tokenid": -1
+        },
+        "bc24_add": {
+            "id": 267,
+            "tokenid": -1
+        },
+        "bc24_edit": {
+            "id": 268,
+            "tokenid": -1
+        },
+        "bc24_delete": {
+            "id": 269,
+            "tokenid": -1
+        },
+        "bc24_approve": {
+            "id": 270,
+            "tokenid": -1
+        },
+        "bc24_add_from_performa": {
+            "id": 271,
+            "tokenid": -1
+        },
+        "bc25_add": {
+            "id": 273,
+            "tokenid": -1
+        },
+        "bc25_edit": {
+            "id": 274,
+            "tokenid": -1
+        },
+        "bc25_delete": {
+            "id": 275,
+            "tokenid": -1
+        },
+        "bc25_approve": {
+            "id": 276,
+            "tokenid": -1
+        },
+        "bc25_add_from_purchase": {
+            "id": 278,
+            "tokenid": -1
+        },
+        "bc261_add": {
+            "id": 279,
+            "tokenid": -1
+        },
+        "bc261_edit": {
+            "id": 280,
+            "tokenid": -1
+        },
+        "bc261_delete": {
+            "id": 281,
+            "tokenid": -1
+        },
+        "bc261_approve": {
+            "id": 282,
+            "tokenid": -1
+        },
+        "bc261_add_from_performa": {
+            "id": 283,
+            "tokenid": -1
+        },
+        "bc261_add_from_purchase": {
+            "id": 284,
+            "tokenid": -1
+        },
+        "bc27_add": {
+            "id": 285,
+            "tokenid": -1
+        },
+        "bc27_edit": {
+            "id": 286,
+            "tokenid": -1
+        },
+        "bc27_delete": {
+            "id": 287,
+            "tokenid": -1
+        },
+        "bc27_approve": {
+            "id": 288,
+            "tokenid": -1
+        },
+        "bc27_add_from_performa": {
+            "id": 289,
+            "tokenid": -1
+        },
+        "bc27_add_from_purchase": {
+            "id": 290,
+            "tokenid": -1
+        },
+        "bc30_add": {
+            "id": 291,
+            "tokenid": -1
+        },
+        "bc30_edit": {
+            "id": 292,
+            "tokenid": -1
+        },
+        "bc30_delete": {
+            "id": 293,
+            "tokenid": -1
+        },
+        "bc30_approve": {
+            "id": 294,
+            "tokenid": -1
+        },
+        "bc30_add_from_performa": {
+            "id": 295,
+            "tokenid": -1
+        },
+        "bc30_add_from_purchase": {
+            "id": 296,
+            "tokenid": -1
+        },
+        "bc33_add": {
+            "id": 297,
+            "tokenid": -1
+        },
+        "bc33_delete": {
+            "id": 299,
+            "tokenid": -1
+        },
+        "bc33_add_from_performa": {
+            "id": 301,
+            "tokenid": -1
+        },
+        "bc33_add_from_purchase": {
+            "id": 302,
+            "tokenid": -1
+        },
+        "bc41_add": {
+            "id": 303,
+            "tokenid": -1
+        },
+        "bc41_edit": {
+            "id": 304,
+            "tokenid": -1
+        },
+        "bc41_delete": {
+            "id": 305,
+            "tokenid": -1
+        },
+        "bc41_approve": {
+            "id": 306,
+            "tokenid": -1
+        },
+        "bc41_add_from_performa": {
+            "id": 307,
+            "tokenid": -1
+        },
+        "pemusnahan_add": {
+            "id": 309,
+            "tokenid": -1
+        },
+        "pemusnahan_edit": {
+            "id": 310,
+            "tokenid": -1
+        },
+        "pemusnahan_delete": {
+            "id": 311,
+            "tokenid": -1
+        },
+        "pemusnahan_approve": {
+            "id": 312,
+            "tokenid": -1
+        },
+        "pemusnahan_add_from_performa": {
+            "id": 313,
+            "tokenid": -1
+        },
+        "pemusnahan_add_from_purchase": {
+            "id": 314,
+            "tokenid": -1
+        },
+        "bc24": {
+            "id": 315,
+            "tokenid": -1
+        },
+        "bc25": {
+            "id": 316,
+            "tokenid": -1
+        },
+        "bc261": {
+            "id": 317,
+            "tokenid": -1
+        },
+        "bc27": {
+            "id": 318,
+            "tokenid": -1
+        },
+        "bc30": {
+            "id": 319,
+            "tokenid": -1
+        },
+        "bc33": {
+            "id": 320,
+            "tokenid": -1
+        },
+        "bc41": {
+            "id": 321,
+            "tokenid": -1
+        },
+        "pemusnahan": {
+            "id": 322,
+            "tokenid": -1
+        },
+        "bc41_add_from_contract_subcon": {
+            "id": 308,
+            "tokenid": -1
+        },
+        "bc24_supply": {
+            "id": 595,
+            "tokenid": -1
+        },
+        "bc25_supply": {
+            "id": 596,
+            "tokenid": -1
+        },
+        "bc261_supply": {
+            "id": 597,
+            "tokenid": -1
+        },
+        "bc27_supply": {
+            "id": 598,
+            "tokenid": -1
+        },
+        "bc30_supply": {
+            "id": 599,
+            "tokenid": -1
+        },
+        "bc33_supply": {
+            "id": 600,
+            "tokenid": -1
+        },
+        "bc41_supply": {
+            "id": 601,
+            "tokenid": -1
+        },
+        "bc30_add_from_contract_subcon": {
+            "id": 604,
+            "tokenid": -1
+        },
+        "bc33_add_from_contract_subcon": {
+            "id": 605,
+            "tokenid": -1
+        },
+        "send_to_ceisa": {
+            "id": 759,
+            "tokenid": -1
+        },
+        "get_register_no": {
+            "id": 760,
+            "tokenid": -1
+        },
+        "cancel_send_ceisa": {
+            "id": 761,
+            "tokenid": -1
+        },
+        "bc24_cancel_approve": {
+            "id": 762,
+            "tokenid": -1
+        },
+        "bc25_cancel_approve": {
+            "id": 763,
+            "tokenid": -1
+        },
+        "bc261_cancel_approve": {
+            "id": 764,
+            "tokenid": -1
+        },
+        "bc27_cancel_approve": {
+            "id": 765,
+            "tokenid": -1
+        },
+        "bc30_cancel_approve": {
+            "id": 766,
+            "tokenid": -1
+        },
+        "bc33_cancel_approve": {
+            "id": 767,
+            "tokenid": -1
+        },
+        "bc41_cancel_approve": {
+            "id": 768,
+            "tokenid": -1
+        },
+        "pemusnahan_cancel_approve": {
+            "id": 769,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 793,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 795,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 844,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 845,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 265,
+            "tokenid": -1
+        },
+        "bc24_add_from_purchase": {
+            "id": 272,
+            "tokenid": -1
+        },
+        "bc25_add_from_performa": {
+            "id": 277,
+            "tokenid": -1
+        },
+        "bc33_edit": {
+            "id": 298,
+            "tokenid": -1
+        },
+        "bc33_approve": {
+            "id": 300,
+            "tokenid": -1
+        },
+        "bc261_add_from_contract_subcon": {
+            "id": 602,
+            "tokenid": -1
+        },
+        "bc27_add_from_contract_subcon": {
+            "id": 603,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 780,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 781,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 782,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 784,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 805,
+            "tokenid": -1
+        },
+        "loaddata_contract_subcon": {
+            "id": 807,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 808,
+            "tokenid": -1
+        }
+    },
+    "66": {
+        "index": {
+            "id": 333,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 334,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 658,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 682,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 683,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 684,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 685,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 802,
+            "tokenid": -1
+        }
+    },
+    "67": {
+        "index": {
+            "id": 335,
+            "tokenid": 9
+        },
+        "loaddata": {
+            "id": 336,
+            "tokenid": 9
+        },
+        "add": {
+            "id": 388,
+            "tokenid": 9
+        },
+        "edit": {
+            "id": 389,
+            "tokenid": 9
+        },
+        "delete": {
+            "id": 390,
+            "tokenid": 9
+        },
+        "post_add_edit": {
+            "id": 391,
+            "tokenid": 9
+        }
+    },
+    "68": {
+        "index": {
+            "id": 337,
+            "tokenid": 10
+        },
+        "loaddata": {
+            "id": 338,
+            "tokenid": 10
+        },
+        "add": {
+            "id": 392,
+            "tokenid": 10
+        },
+        "edit": {
+            "id": 393,
+            "tokenid": 10
+        },
+        "delete": {
+            "id": 394,
+            "tokenid": 10
+        },
+        "post_add_edit": {
+            "id": 395,
+            "tokenid": 10
+        }
+    },
+    "69": {
+        "index": {
+            "id": 339,
+            "tokenid": 6
+        },
+        "loaddata": {
+            "id": 340,
+            "tokenid": 6
+        },
+        "add": {
+            "id": 378,
+            "tokenid": 6
+        },
+        "edit": {
+            "id": 379,
+            "tokenid": 6
+        },
+        "delete": {
+            "id": 380,
+            "tokenid": 6
+        },
+        "post_add_edit": {
+            "id": 381,
+            "tokenid": 6
+        }
+    },
+    "70": {
+        "index": {
+            "id": 341,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 342,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 640,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 641,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 642,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 643,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 644,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 645,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 646,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 647,
+            "tokenid": -1
+        },
+        "loaddata_supp_trans_invoice_item": {
+            "id": 648,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 753,
+            "tokenid": -1
+        },
+        "loaddata_tax": {
+            "id": 1011,
+            "tokenid": -1
+        },
+        "post_add_edit_tax": {
+            "id": 1013,
+            "tokenid": -1
+        },
+        "loaddata_detail_gl": {
+            "id": 890,
+            "tokenid": -1
+        },
+        "post_add_edit_detail_gl": {
+            "id": 891,
+            "tokenid": -1
+        },
+        "delete_detail_gl": {
+            "id": 892,
+            "tokenid": -1
+        }
+    },
+    "71": {
+        "index": {
+            "id": 343,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 686,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 687,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 688,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 689,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 690,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 691,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 692,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 693,
+            "tokenid": -1
+        },
+        "loaddata_supp_trans_payment_item": {
+            "id": 694,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 728,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 752,
+            "tokenid": -1
+        }
+    },
+    "72": {
+        "index": {
+            "id": 345,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 346,
+            "tokenid": -1
+        }
+    },
+    "73": {
+        "index": {
+            "id": 347,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 348,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 695,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 696,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 697,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 698,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 699,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 700,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 702,
+            "tokenid": -1
+        },
+        "loaddata_cust_trans_invoice_item": {
+            "id": 703,
+            "tokenid": -1
+        },
+        "print_customer_invoice": {
+            "id": 731,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 755,
+            "tokenid": -1
+        },
+        "loaddata_tax": {
+            "id": 1010,
+            "tokenid": -1
+        },
+        "post_add_edit_tax": {
+            "id": 1012,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 701,
+            "tokenid": -1
+        },
+        "loaddata_detail_gl": {
+            "id": 893,
+            "tokenid": -1
+        },
+        "post_add_edit_detail_gl": {
+            "id": 894,
+            "tokenid": -1
+        },
+        "delete_detail_gl": {
+            "id": 895,
+            "tokenid": -1
+        }
+    },
+    "74": {
+        "index": {
+            "id": 349,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 350,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 704,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 705,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 706,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 707,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 708,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 709,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 710,
+            "tokenid": -1
+        },
+        "detele_detail": {
+            "id": 711,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 756,
+            "tokenid": -1
+        },
+        "loaddata_cust_trans_payment_item": {
+            "id": 712,
+            "tokenid": -1
+        }
+    },
+    "75": {
+        "index": {
+            "id": 351,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 353,
+            "tokenid": -1
+        }
+    },
+    "76": {
+        "index": {
+            "id": 354,
+            "tokenid": 3
+        },
+        "loaddata": {
+            "id": 355,
+            "tokenid": 3
+        },
+        "add": {
+            "id": 356,
+            "tokenid": 3
+        },
+        "edit": {
+            "id": 357,
+            "tokenid": 3
+        },
+        "post_add_edit": {
+            "id": 358,
+            "tokenid": 3
+        }
+    },
+    "78": {
+        "index": {
+            "id": 382,
+            "tokenid": 7
+        },
+        "add": {
+            "id": 384,
+            "tokenid": 7
+        },
+        "edit": {
+            "id": 385,
+            "tokenid": 7
+        },
+        "delete": {
+            "id": 386,
+            "tokenid": 7
+        },
+        "post_add_edit": {
+            "id": 387,
+            "tokenid": 7
+        },
+        "loaddata": {
+            "id": 383,
+            "tokenid": 7
+        }
+    },
+    "79": {
+        "index": {
+            "id": 396,
+            "tokenid": 11
+        },
+        "loaddata": {
+            "id": 397,
+            "tokenid": 11
+        },
+        "add": {
+            "id": 398,
+            "tokenid": 11
+        },
+        "edit": {
+            "id": 399,
+            "tokenid": 11
+        },
+        "delete": {
+            "id": 400,
+            "tokenid": 11
+        },
+        "post_add_edit": {
+            "id": 401,
+            "tokenid": 11
+        }
+    },
+    "81": {
+        "index": {
+            "id": 459,
+            "tokenid": 50
+        }
+    },
+    "90": {
+        "index": {
+            "id": 436,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 437,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 438,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 439,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 440,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 441,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 443,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 476,
+            "tokenid": -1
+        },
+        "loaddata_receive_item": {
+            "id": 477,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 442,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 475,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 777,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 925,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 926,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 927,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 928,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 929,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 930,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 931,
+            "tokenid": -1
+        }
+    },
+    "4": {
+        "approve": {
+            "id": 454,
+            "tokenid": 21
+        },
+        "loaddata_detail": {
+            "id": 455,
+            "tokenid": 21
+        },
+        "post_add_edit_detail": {
+            "id": 456,
+            "tokenid": 21
+        },
+        "delete_detail": {
+            "id": 457,
+            "tokenid": 21
+        },
+        "loaddata": {
+            "id": 49,
+            "tokenid": 21
+        },
+        "add": {
+            "id": 50,
+            "tokenid": 21
+        },
+        "edit": {
+            "id": 51,
+            "tokenid": 21
+        },
+        "post_add_edit": {
+            "id": 52,
+            "tokenid": 21
+        },
+        "delete": {
+            "id": 53,
+            "tokenid": 21
+        },
+        "index": {
+            "id": 6,
+            "tokenid": 21
+        },
+        "cancel_approve": {
+            "id": 788,
+            "tokenid": 21
+        },
+        "print_journal": {
+            "id": 1018,
+            "tokenid": -1
+        }
+    },
+    "80": {
+        "index": {
+            "id": 458,
+            "tokenid": 43
+        }
+    },
+    "82": {
+        "index": {
+            "id": 460,
+            "tokenid": 11
+        }
+    },
+    "84": {
+        "index": {
+            "id": 462,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 469,
+            "tokenid": 43
+        }
+    },
+    "85": {
+        "index": {
+            "id": 463,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 470,
+            "tokenid": 43
+        }
+    },
+    "86": {
+        "index": {
+            "id": 464,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 471,
+            "tokenid": 43
+        }
+    },
+    "87": {
+        "index": {
+            "id": 465,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 472,
+            "tokenid": 43
+        }
+    },
+    "88": {
+        "index": {
+            "id": 466,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 473,
+            "tokenid": 43
+        }
+    },
+    "89": {
+        "index": {
+            "id": 467,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 474,
+            "tokenid": 43
+        }
+    },
+    "83": {
+        "loaddata": {
+            "id": 468,
+            "tokenid": 43
+        },
+        "index": {
+            "id": 461,
+            "tokenid": 43
+        }
+    },
+    "91": {
+        "index": {
+            "id": 478,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 479,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 480,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 482,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 483,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 484,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 485,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 486,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 487,
+            "tokenid": -1
+        },
+        "loaddata_receive_item": {
+            "id": 488,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 729,
+            "tokenid": -1
+        },
+        "print_subcon_out": {
+            "id": 841,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 481,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 778,
+            "tokenid": -1
+        },
+        "print_subcon_out_type": {
+            "id": 921,
+            "tokenid": -1
+        }
+    },
+    "21": {
+        "index": {
+            "id": 56,
+            "tokenid": 36
+        },
+        "loaddata": {
+            "id": 60,
+            "tokenid": 36
+        },
+        "print_profit_and_loss": {
+            "id": 898,
+            "tokenid": -1
+        }
+    },
+    "93": {
+        "index": {
+            "id": 535,
+            "tokenid": -3
+        },
+        "loaddata": {
+            "id": 536,
+            "tokenid": -3
+        },
+        "edit": {
+            "id": 537,
+            "tokenid": -3
+        },
+        "post_add_edit": {
+            "id": 538,
+            "tokenid": -3
+        }
+    },
+    "92": {
+        "index": {
+            "id": 539,
+            "tokenid": -3
+        },
+        "loaddata": {
+            "id": 540,
+            "tokenid": -3
+        },
+        "add": {
+            "id": 541,
+            "tokenid": -3
+        },
+        "edit": {
+            "id": 542,
+            "tokenid": -3
+        },
+        "delete": {
+            "id": 543,
+            "tokenid": -3
+        },
+        "post_add_edit": {
+            "id": 544,
+            "tokenid": -3
+        }
+    },
+    "94": {
+        "index": {
+            "id": 545,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 546,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 547,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 548,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 549,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 550,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 943,
+            "tokenid": -1
+        }
+    },
+    "95": {
+        "index": {
+            "id": 551,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 552,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 553,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 554,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 555,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 556,
+            "tokenid": -1
+        }
+    },
+    "96": {
+        "index": {
+            "id": 561,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 562,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 563,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 564,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 565,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 566,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 567,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 569,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 570,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 571,
+            "tokenid": -1
+        },
+        "loaddata_detail_total": {
+            "id": 572,
+            "tokenid": -1
+        },
+        "print_scrap": {
+            "id": 734,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 774,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 904,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 905,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 906,
+            "tokenid": -1
+        },
+        "loaddata_bom": {
+            "id": 568,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 908,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 909,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 910,
+            "tokenid": -1
+        },
+        "loaddata_material": {
+            "id": 866,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 907,
+            "tokenid": -1
+        }
+    },
+    "97": {
+        "index": {
+            "id": 573,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 574,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 575,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 576,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 577,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 578,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 579,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 580,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 775,
+            "tokenid": -1
+        },
+        "loaddata_material": {
+            "id": 937,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 989,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 990,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 991,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 992,
+            "tokenid": -1
+        },
+        "loaddata_list": {
+            "id": 993,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 994,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 920,
+            "tokenid": -1
+        }
+    },
+    "98": {
+        "index": {
+            "id": 581,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 582,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 583,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 584,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 585,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 586,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 587,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 589,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 590,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 591,
+            "tokenid": -1
+        },
+        "loaddata_detail_total": {
+            "id": 592,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 773,
+            "tokenid": -1
+        },
+        "loaddata_material": {
+            "id": 791,
+            "tokenid": -1
+        },
+        "loaddata_bom": {
+            "id": 588,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 912,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 911,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 913,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 914,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 915,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 916,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 917,
+            "tokenid": -1
+        }
+    },
+    "99": {
+        "index": {
+            "id": 606,
+            "tokenid": 5
+        },
+        "loaddata": {
+            "id": 607,
+            "tokenid": 5
+        },
+        "add": {
+            "id": 608,
+            "tokenid": 5
+        },
+        "edit": {
+            "id": 609,
+            "tokenid": 5
+        },
+        "post_add_edit": {
+            "id": 610,
+            "tokenid": 5
+        },
+        "delete": {
+            "id": 611,
+            "tokenid": 5
+        },
+        "loaddata_detail": {
+            "id": 612,
+            "tokenid": 5
+        },
+        "post_add_edit_detail": {
+            "id": 613,
+            "tokenid": 5
+        },
+        "delete_detail": {
+            "id": 614,
+            "tokenid": 5
+        },
+        "approve": {
+            "id": 615,
+            "tokenid": 5
+        }
+    },
+    "100": {
+        "index": {
+            "id": 616,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 617,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 618,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 619,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 621,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 622,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 623,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 758,
+            "tokenid": -1
+        },
+        "loaddata_material": {
+            "id": 935,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 940,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 620,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 941,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 942,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 924,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 879,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 880,
+            "tokenid": -1
+        },
+        "loaddata_list": {
+            "id": 881,
+            "tokenid": -1
+        }
+    },
+    "101": {
+        "index": {
+            "id": 624,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 625,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 626,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 627,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 628,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 629,
+            "tokenid": -1
+        }
+    },
+    "102": {
+        "index": {
+            "id": 630,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 631,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 632,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 633,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 634,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 635,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 636,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 637,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 639,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 638,
+            "tokenid": -1
+        }
+    },
+    "24": {
+        "add": {
+            "id": 650,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 651,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 652,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 653,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 654,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 655,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 656,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 657,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 801,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 64,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 65,
+            "tokenid": -1
+        }
+    },
+    "6": {
+        "add": {
+            "id": 661,
+            "tokenid": 24
+        },
+        "edit": {
+            "id": 662,
+            "tokenid": 24
+        },
+        "delete": {
+            "id": 663,
+            "tokenid": 24
+        },
+        "post_add_edit": {
+            "id": 664,
+            "tokenid": 24
+        },
+        "loaddata": {
+            "id": 10,
+            "tokenid": 24
+        },
+        "index": {
+            "id": 9,
+            "tokenid": 24
+        }
+    },
+    "103": {
+        "loaddata": {
+            "id": 666,
+            "tokenid": 50
+        },
+        "index": {
+            "id": 665,
+            "tokenid": 50
+        }
+    },
+    "104": {
+        "index": {
+            "id": 667,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 668,
+            "tokenid": 50
+        }
+    },
+    "23": {
+        "add": {
+            "id": 674,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 675,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 676,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 677,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 678,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 679,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 681,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 800,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 62,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 63,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 680,
+            "tokenid": -1
+        }
+    },
+    "105": {
+        "index": {
+            "id": 726,
+            "tokenid": -1
+        }
+    },
+    "106": {
+        "index": {
+            "id": 735,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 737,
+            "tokenid": -1
+        },
+        "print_journal_inquiry": {
+            "id": 738,
+            "tokenid": -1
+        }
+    },
+    "107": {
+        "index": {
+            "id": 736,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 739,
+            "tokenid": -1
+        },
+        "print_account_inquiry": {
+            "id": 740,
+            "tokenid": -1
+        }
+    },
+    "2": {
+        "generate_security_module": {
+            "id": 742,
+            "tokenid": 0
+        },
+        "index": {
+            "id": 3,
+            "tokenid": -1
+        },
+        "login": {
+            "id": 4,
+            "tokenid": -2
+        },
+        "logout": {
+            "id": 5,
+            "tokenid": -1
+        }
+    },
+    "108": {
+        "loaddata": {
+            "id": 790,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 789,
+            "tokenid": -1
+        }
+    },
+    "5": {
+        "download_file": {
+            "id": 799,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 8,
+            "tokenid": -1
+        }
+    },
+    "111": {
+        "loaddata": {
+            "id": 813,
+            "tokenid": 43
+        },
+        "index": {
+            "id": 812,
+            "tokenid": 43
+        }
+    },
+    "112": {
+        "index": {
+            "id": 814,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 815,
+            "tokenid": 43
+        }
+    },
+    "113": {
+        "index": {
+            "id": 816,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 817,
+            "tokenid": 43
+        }
+    },
+    "114": {
+        "index": {
+            "id": 818,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 819,
+            "tokenid": 43
+        }
+    },
+    "115": {
+        "index": {
+            "id": 820,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 821,
+            "tokenid": 43
+        }
+    },
+    "116": {
+        "index": {
+            "id": 822,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 823,
+            "tokenid": 43
+        }
+    },
+    "117": {
+        "index": {
+            "id": 824,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 830,
+            "tokenid": -1
+        }
+    },
+    "109": {
+        "loaddata_assets": {
+            "id": 826,
+            "tokenid": -1
+        },
+        "loaddata_incoming": {
+            "id": 831,
+            "tokenid": -1
+        },
+        "loaddata_outgoing": {
+            "id": 832,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 806,
+            "tokenid": -1
+        },
+        "print_assets": {
+            "id": 882,
+            "tokenid": -1
+        },
+        "print_incoming": {
+            "id": 883,
+            "tokenid": -1
+        },
+        "print_outgoing": {
+            "id": 884,
+            "tokenid": -1
+        }
+    },
+    "118": {
+        "index": {
+            "id": 827,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 829,
+            "tokenid": -1
+        }
+    },
+    "119": {
+        "index": {
+            "id": 828,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 932,
+            "tokenid": -1
+        }
+    },
+    "120": {
+        "index": {
+            "id": 834,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 835,
+            "tokenid": -1
+        }
+    },
+    "121": {
+        "index": {
+            "id": 836,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 837,
+            "tokenid": -1
+        }
+    },
+    "122": {
+        "index": {
+            "id": 838,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 839,
+            "tokenid": -1
+        }
+    },
+    "11": {
+        "edit": {
+            "id": 42,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 43,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 44,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 19,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 20,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 41,
+            "tokenid": -1
+        }
+    },
+    "129": {
+        "index": {
+            "id": 918,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 919,
+            "tokenid": -1
+        }
+    },
+    "8": {
+        "loaddata": {
+            "id": 14,
+            "tokenid": 23
+        },
+        "add": {
+            "id": 33,
+            "tokenid": 23
+        },
+        "edit": {
+            "id": 34,
+            "tokenid": 23
+        },
+        "post_add_edit": {
+            "id": 35,
+            "tokenid": 23
+        },
+        "delete": {
+            "id": 36,
+            "tokenid": 23
+        },
+        "index": {
+            "id": 13,
+            "tokenid": 23
+        }
+    },
+    "9": {
+        "index": {
+            "id": 15,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 16,
+            "tokenid": -1
+        }
+    },
+    "10": {
+        "index": {
+            "id": 17,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 18,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 37,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 38,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 39,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 40,
+            "tokenid": -1
+        }
+    },
+    "14": {
+        "index": {
+            "id": 24,
+            "tokenid": -1
+        }
+    },
+    "15": {
+        "index": {
+            "id": 25,
+            "tokenid": 44
+        }
+    },
+    "16": {
+        "index": {
+            "id": 26,
+            "tokenid": 45
+        }
+    },
+    "17": {
+        "index": {
+            "id": 27,
+            "tokenid": 47
+        }
+    },
+    "7": {
+        "add": {
+            "id": 29,
+            "tokenid": 22
+        },
+        "edit": {
+            "id": 30,
+            "tokenid": 22
+        },
+        "post_add_edit": {
+            "id": 31,
+            "tokenid": 22
+        },
+        "delete": {
+            "id": 32,
+            "tokenid": 22
+        },
+        "index": {
+            "id": 11,
+            "tokenid": 22
+        },
+        "loaddata": {
+            "id": 12,
+            "tokenid": 22
+        }
+    },
+    "22": {
+        "index": {
+            "id": 57,
+            "tokenid": 37
+        },
+        "loaddata": {
+            "id": 61,
+            "tokenid": 37
+        },
+        "print_cashflow": {
+            "id": 899,
+            "tokenid": -1
+        }
+    },
+    "13": {
+        "index": {
+            "id": 23,
+            "tokenid": 49
+        }
+    },
+    "18": {
+        "index": {
+            "id": 28,
+            "tokenid": 43
+        }
+    },
+    "133": {
+        "cancel_approve": {
+            "id": 950,
+            "tokenid": -1
+        },
+        "supply": {
+            "id": 951,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 944,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 945,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 946,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 947,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 948,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 949,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 952,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 953,
+            "tokenid": -1
+        },
+        "post_add_edit_detail": {
+            "id": 954,
+            "tokenid": -1
+        },
+        "delete_detail": {
+            "id": 956,
+            "tokenid": -1
+        },
+        "post_add_edit_supply": {
+            "id": 957,
+            "tokenid": -1
+        },
+        "auto_supply_fifo": {
+            "id": 958,
+            "tokenid": -1
+        },
+        "auto_supply_lifo": {
+            "id": 959,
+            "tokenid": -1
+        },
+        "loaddata_transfer_item": {
+            "id": 995,
+            "tokenid": -1
+        },
+        "loaddata_detail_supply": {
+            "id": 996,
+            "tokenid": -1
+        },
+        "loaddata_supply_item": {
+            "id": 997,
+            "tokenid": -1
+        },
+        "print_ppb_kb": {
+            "id": 998,
+            "tokenid": -1
+        }
+    },
+    "131": {
+        "index": {
+            "id": 933,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 934,
+            "tokenid": -1
+        }
+    },
+    "134": {
+        "loaddata": {
+            "id": 961,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 962,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 965,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 960,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 963,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 964,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 966,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 967,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 1009,
+            "tokenid": -1
+        }
+    },
+    "132": {
+        "index": {
+            "id": 938,
+            "tokenid": -1
+        }
+    },
+    "1": {
+        "index": {
+            "id": 1,
+            "tokenid": -1
+        },
+        "dashboard": {
+            "id": 2,
+            "tokenid": -1
+        }
+    },
+    "3": {
+        "index": {
+            "id": 7,
+            "tokenid": 46
+        }
+    },
+    "25": {
+        "index": {
+            "id": 66,
+            "tokenid": 1
+        },
+        "post_add_edit": {
+            "id": 76,
+            "tokenid": 1
+        }
+    },
+    "26": {
+        "index": {
+            "id": 67,
+            "tokenid": 2
+        },
+        "loaddata": {
+            "id": 72,
+            "tokenid": 2
+        },
+        "add": {
+            "id": 73,
+            "tokenid": 2
+        },
+        "edit": {
+            "id": 74,
+            "tokenid": 2
+        },
+        "post_add_edit": {
+            "id": 75,
+            "tokenid": 2
+        }
+    },
+    "27": {
+        "index": {
+            "id": 68,
+            "tokenid": -1
+        }
+    },
+    "28": {
+        "index": {
+            "id": 69,
+            "tokenid": 8
+        },
+        "loaddata": {
+            "id": 77,
+            "tokenid": 8
+        },
+        "add": {
+            "id": 78,
+            "tokenid": 8
+        },
+        "edit": {
+            "id": 79,
+            "tokenid": 8
+        },
+        "post_add_edit": {
+            "id": 80,
+            "tokenid": 8
+        },
+        "delete": {
+            "id": 81,
+            "tokenid": 8
+        }
+    },
+    "136": {
+        "edit": {
+            "id": 977,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 978,
+            "tokenid": -1
+        },
+        "index": {
+            "id": 974,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 975,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 976,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 979,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 980,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 1001,
+            "tokenid": -1
+        },
+        "loaddata_detail": {
+            "id": 1002,
+            "tokenid": -1
+        }
+    },
+    "135": {
+        "index": {
+            "id": 968,
+            "tokenid": -1
+        },
+        "add": {
+            "id": 969,
+            "tokenid": -1
+        },
+        "edit": {
+            "id": 970,
+            "tokenid": -1
+        },
+        "delete": {
+            "id": 971,
+            "tokenid": -1
+        },
+        "approve": {
+            "id": 972,
+            "tokenid": -1
+        },
+        "cancel_approve": {
+            "id": 973,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 988,
+            "tokenid": null
+        },
+        "loaddata_ppb_kb_out_item": {
+            "id": 999,
+            "tokenid": -1
+        },
+        "post_add_edit": {
+            "id": 1000,
+            "tokenid": -1
+        }
+    },
+    "137": {
+        "index": {
+            "id": 981,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 982,
+            "tokenid": -1
+        },
+        "loaddata_assets": {
+            "id": 1003,
+            "tokenid": -1
+        },
+        "loaddata_incoming": {
+            "id": 1004,
+            "tokenid": -1
+        },
+        "loaddata_outgoing": {
+            "id": 1005,
+            "tokenid": -1
+        },
+        "print_assets": {
+            "id": 1006,
+            "tokenid": -1
+        },
+        "print_incoming": {
+            "id": 1007,
+            "tokenid": -1
+        },
+        "print_outgoing": {
+            "id": 1008,
+            "tokenid": -1
+        }
+    },
+    "138": {
+        "index": {
+            "id": 983,
+            "tokenid": -1
+        }
+    },
+    "139": {
+        "index": {
+            "id": 984,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 985,
+            "tokenid": -1
+        }
+    },
+    "140": {
+        "index": {
+            "id": 986,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 987,
+            "tokenid": -1
+        }
+    },
+    "110": {
+        "index": {
+            "id": 810,
+            "tokenid": 43
+        },
+        "loaddata": {
+            "id": 811,
+            "tokenid": 43
+        }
+    },
+    "123": {
+        "index": {
+            "id": 867,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 868,
+            "tokenid": 50
+        }
+    },
+    "124": {
+        "index": {
+            "id": 869,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 870,
+            "tokenid": 50
+        }
+    },
+    "125": {
+        "index": {
+            "id": 871,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 872,
+            "tokenid": 50
+        }
+    },
+    "126": {
+        "index": {
+            "id": 873,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 874,
+            "tokenid": 50
+        }
+    },
+    "130": {
+        "index": {
+            "id": 922,
+            "tokenid": 50
+        },
+        "loaddata": {
+            "id": 923,
+            "tokenid": 50
+        }
+    },
+    "127": {
+        "index": {
+            "id": 875,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 876,
+            "tokenid": -1
+        }
+    },
+    "128": {
+        "index": {
+            "id": 877,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 878,
+            "tokenid": -1
+        }
+    },
+    "709": {
+        "index": {
+            "id": 58011,
+            "tokenid": -1
+        },
+        "loaddata": {
+            "id": 58012,
+            "tokenid": -1
+        }
+    },
+    "142": {
+        "index": {
+            "id": 1042,
+            "tokenid": 17
+        }
+    }
+}

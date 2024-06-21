@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <?php $this->load->view($path_template.'/include/global/meta'); ?>
+    <body>
+        <div id="page-container" class="page-header-fixed page-header-glass main-content-boxed">
+            
+			<?php $this->load->view($path_template.'/include/global/aside'); ?>
+			<!-- Header -->
+            <?php $this->load->view($path_template.'/include/global/header'); ?>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <?php 
+					if(isset($view_load)){
+						if(is_array($view_load)){
+							foreach($view_load as $dt_load){
+								$this->load->view('content/'.$dt_load);
+							}
+						} else {
+							$this->load->view('content/'.$view_load);
+						}
+					}
+				?>
+				
+				
+                <!-- Footer -->
+				<?php $this->load->view($path_template.'/include/global/footer'); ?>
+                <!-- END Footer -->
+
+            </main>
+            <!-- END Main Container -->
+        </div>
+        <!-- END Page Container -->
+
+        <?php $this->load->view($path_template.'/include/global/javascript'); ?>
+        
+    </body>
+</html>

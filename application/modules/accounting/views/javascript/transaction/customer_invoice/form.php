@@ -1,0 +1,457 @@
+<script type="text/javascript">
+	var new_cust_trans_invoice = 1;
+	var cust_trans_invoice_type_id = 1;
+	var cust_trans_invoice_id = 0;
+	var customer_invoice_lock_data = 0;
+	var cust_trans_invoice_detail_id = 0;
+	
+	$(".form_tab_<?php echo $methodid ?>").on("click", "a", function (e) {
+        e.preventDefault();
+		setTimeout(function(){ 
+			$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+			$("#table_<?php echo $methodid ?>_detail").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail').width() - 20,true).trigger('resize');
+			
+			$("#table_<?php echo $methodid ?>_invoice_item").trigger('reloadGrid');
+			$("#table_<?php echo $methodid ?>_invoice_item").setGridWidth($('.grid_container_<?php echo $methodid; ?>_invoice_item').width() - 20,true).trigger('resize');
+			
+			$("#table_<?php echo $methodid ?>_detail_gl").trigger('reloadGrid');
+			$("#table_<?php echo $methodid ?>_detail_gl").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail_gl').width() - 20,true).trigger('resize');
+					
+	
+			$('.tab_scrollbar').getNiceScroll().resize(); 
+		}, 1000);
+    });
+	
+	function edit_<?php echo $methodid ?>(id){
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_cust_trans_invoice'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				$("#tab_<?php echo $methodid; ?>_detail").attr("data-toggle","tab");
+				$("#tab_<?php echo $methodid; ?>_detail").removeClass( "tab_disabled");
+				$("#tab_<?php echo $methodid; ?>_header").click();
+				
+				$('#form_<?php echo $methodid ?>_cust_trans_id').val(data[0].cust_trans_id);
+				$('#form_<?php echo $methodid ?>_cust_trans_no').val(data[0].cust_trans_no);
+				$('#form_<?php echo $methodid ?>_cust_trans_date').val(data[0].cust_trans_date);
+				$('#form_<?php echo $methodid ?>_cust_trans_due_date').val(data[0].cust_trans_due_date);
+				$('#form_<?php echo $methodid ?>_voucher_no').val(data[0].voucher_no);
+				$('#form_<?php echo $methodid ?>_cust_trans_type_id').val(data[0].cust_trans_type_id);
+				
+				cust_trans_invoice_id = id;
+				customer_invoice_lock_data = data[0].lock_data;
+				
+				change_form_<?php echo $methodid ?>_partner_id(data[0].partner_id);
+				change_form_<?php echo $methodid ?>_currencies_id(data[0].currencies_id);
+				
+				new_cust_trans_invoice = 0;
+				$('.button_<?php echo $methodid ?>_detail_gl_edit').hide();
+				$('.button_<?php echo $methodid ?>_detail_gl_new').show();	
+				
+				$('#form_<?php echo $methodid ?>_detail_cust_trans_id').val(data[0].cust_trans_id);
+				$('#form_<?php echo $methodid ?>_detail_cust_trans_detail_id').val('');
+				
+				$('#form_<?php echo $methodid ?>_detail_partner_id').val(data[0].partner_id);
+				$('#form_<?php echo $methodid ?>_detail_currencies_id').val(data[0].currencies_id);
+				
+				$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_id').val(data[0].cust_trans_id);
+				$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_detail_id').val('');
+				$('#form_<?php echo $methodid ?>_detail_gl_amount').val(0);
+				$('#form_<?php echo $methodid ?>_detail_gl_memo').val('');
+				
+				
+				setTimeout(function(){ 
+					$('.tab_scrollbar').getNiceScroll().resize(); 
+				}, 100);
+			}
+		});
+	}
+	
+	function cancel_<?php echo $methodid ?>(){
+		$('#panel_content_<?php echo $methodid ?>').show();
+		$('#panel_content_form_<?php echo $methodid ?>').hide();
+		$("#table_<?php echo $methodid ?>").trigger('reloadGrid');
+	}
+	
+	function save_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>').submit();
+	}
+	
+	var jvalidate = $("#form_<?php echo $methodid ?>").validate({
+		ignore: [],
+		rules: {                                            
+			gl_account_group: {
+				required: true
+			}
+		} 
+	});
+	
+	var check_submit = 0;
+	function post_<?php echo $methodid ?>(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'Save <?php echo $page_title ?>','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'<?php echo $page_title ?>',data.message);	
+						
+						new_cust_trans_invoice = data.new_cust_trans;
+						
+						if(new_cust_trans_invoice == 1){
+							new_cust_trans_invoice = 0;
+							$("#tab_<?php echo $methodid; ?>_detail").attr("data-toggle","tab");
+							$("#tab_<?php echo $methodid; ?>_detail").removeClass( "tab_disabled");
+							$("#tab_<?php echo $methodid; ?>_detail").click();
+							cust_trans_invoice_id = data.cust_trans_id;
+							$('#form_<?php echo $methodid ?>_cust_trans_id').val(cust_trans_invoice_id);
+							$('#form_<?php echo $methodid ?>_detail_cust_trans_id').val(cust_trans_invoice_id);
+							$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_id').val(cust_trans_invoice_id);
+							
+							$('#form_<?php echo $methodid ?>_detail_cust_trans_detail_id').val('');
+							$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_detail_id').val('');
+							
+							$('#form_<?php echo $methodid ?>_detail_partner_id').val(data.partner_id);
+							$('#form_<?php echo $methodid ?>_detail_currencies_id').val(data.currencies_id);
+								
+							setTimeout(function(){ 
+								$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+								$("#table_<?php echo $methodid ?>_detail").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail').width() - 20,true).trigger('resize');
+								
+								$("#table_<?php echo $methodid ?>_detail_gl").trigger('reloadGrid');
+								$("#table_<?php echo $methodid ?>_detail_gl").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail_gl').width() - 20,true).trigger('resize');
+								
+								$('.tab_scrollbar').getNiceScroll().resize(); 
+							}, 500);
+								
+						} else {
+							new_cust_trans_invoice = 1;
+							$('#panel_content_<?php echo $methodid ?>').show();
+							$('#panel_content_form_<?php echo $methodid ?>').hide();
+							$("#table_<?php echo $methodid ?>").trigger('reloadGrid');
+						}
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	var beforeclick_<?php echo $methodid ?>_invoice_item = function (rowid, e) {
+		$("#table_<?php echo $methodid ?>_invoice_item").jqGrid('resetSelection');
+		return(true);
+	}
+	
+	var check_submit = 0;
+	function add_list_<?php echo $methodid ?>(rh_id){
+		page_loading("show",'<?php echo $page_title ?> Detail','Please Wait...');
+		setTimeout(function(){ 
+			var id = jQuery("#table_<?php echo $methodid ?>_invoice_item").jqGrid('getGridParam','selrow');
+			if (id) {
+				var row = jQuery("#table_<?php echo $methodid ?>_invoice_item").jqGrid('getRowData',id);   
+				
+				cust_trans_id = $('#form_<?php echo $methodid ?>_cust_trans_id').val();
+				cust_trans_detail_id = rh_id;
+				parent_id = parseInt(unwrap_cell_value(row.r1).replace(/,/g, ''));
+				quantity_invoiced = parseFloat(unwrap_cell_value(row.r14).replace(/,/g, ''));
+				unit_price = parseFloat(unwrap_cell_value(row.r15).replace(/,/g, ''));
+														
+				$.ajax({
+					url: baseurl+'<?php echo $class_uri ?>/post_add_edit_detail',
+					data: {
+						'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+						,cust_trans_detail_id:cust_trans_detail_id
+						,parent_id:parent_id
+						,cust_trans_id :cust_trans_id
+						,quantity_invoiced :quantity_invoiced
+						,unit_price :unit_price
+					},
+					dataType: 'json',
+					method: 'post',
+					success: function(data){
+						page_loading("hide");
+						check_submit = 0;
+						if(data.valid){
+							show_success("show",'<?php echo $page_title ?> Detail',data.message);	
+							cancel_detail_<?php echo $methodid ?>();
+							
+							page_loading("hide");			
+						} else {
+							show_error("show",'Error',data.message);
+						}
+					},
+					error: function(xhr,error){
+						show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+						check_submit = 0;
+					}
+				});
+			} else {
+				show_error("show",'Error','Please select row');
+			}
+			
+		}, 500);	
+	}
+	
+	function edit_detail_<?php echo $methodid ?>(id){
+		page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_cust_trans_detail'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				page_loading("hide");
+				$('#form_<?php echo $methodid ?>_detail_cust_trans_detail_id').val(data[0].cust_trans_detail_id);
+					
+				$("#table_<?php echo $methodid ?>_invoice_item").trigger('reloadGrid');
+					
+			}
+		});
+	}
+	
+	function delete_detail_<?php echo $methodid ?>(id){
+		if(check_submit == 0) {
+			swal({
+				title: "Confirm Delete <?php echo $page_title ?> Detail ?",
+				type: "question",
+				dangerMode: true,
+				showCancelButton: !0,
+				confirmButtonClass: "btn btn-danger m-1",
+				cancelButtonClass: "btn btn-secondary m-1",
+				confirmButtonText: "Confirm",
+				cancelButtonText: "Cancel",
+				backdrop: true,
+				allowOutsideClick : false,
+			}).then((result) => {
+				if (result.value) {
+					page_loading("show",'Delete <?php echo $page_title ?> Detail','Please Wait...');
+					$.ajax({
+						url: baseurl+'<?php echo $class_uri ?>/delete_detail',								
+						data: {'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>',cust_trans_detail_id:id},
+						dataType: 'json',
+						method: 'post',
+						success: function(data){
+							page_loading("hide");
+							check_submit = 0;
+							if(data.valid){
+								show_success("show",'Delete <?php echo $page_title ?> Detail',data.message);			
+								cancel_detail_<?php echo $methodid ?>();
+								
+								setTimeout(function(){ 
+									$('.tab_scrollbar').getNiceScroll().resize(); 
+								}, 100);
+							} else {
+								show_error("show",'Error',data.message);
+							}
+						},
+						error: function(xhr,error){
+							show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+							check_submit = 0;
+						}
+					});
+				} else if (result.dismiss === swal.DismissReason.cancel) {
+					swal.closeModal();	
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function cancel_detail_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>_detail_cust_trans_detail_id').val('');
+		$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');		
+		$("#table_<?php echo $methodid ?>_invoice_item").trigger('reloadGrid');
+	}	
+	
+	var check_submit = 0;
+	function add_<?php echo $methodid ?>_gl(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'<?php echo $page_title ?> GL Detail','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>_detail_gl").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit_detail_gl',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'<?php echo $page_title ?> GL Detail',data.message);	
+						
+						$("#table_<?php echo $methodid ?>_detail_gl").trigger('reloadGrid');
+						cancel_detail_<?php echo $methodid ?>_gl();
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function edit_detail_<?php echo $methodid ?>_gl(id){
+		page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_cust_trans_detail_gl'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				page_loading("hide");
+				
+				$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_detail_id').val(data[0].cust_trans_detail_id);
+				$('#form_<?php echo $methodid ?>_detail_gl_amount').val(data[0].amount);
+				$('#form_<?php echo $methodid ?>_detail_gl_memo').val(data[0].memo);
+				
+				change_form_<?php echo $methodid ?>_detail_gl_gl_account_id(data[0].gl_account_id);
+				
+				$('.button_<?php echo $methodid ?>_detail_gl_edit').show();
+				$('.button_<?php echo $methodid ?>_detail_gl_new').hide();	
+			}
+				
+		});
+	}
+	
+	function set_tax_<?php echo $methodid ?>(id){
+		page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+		$('#dialog_<?php echo $methodid ?>_tax').load('<?php echo base_url(); ?><?php echo $class_uri ?>/loaddata_tax',{
+           '<?php echo $this->security->get_csrf_token_name() ?>': '<?php echo $this->security->get_csrf_hash() ?>', 
+           cust_trans_detail_id: id,
+           methodid: '<?php echo $methodid ?>'
+       },function(){
+			$('#dialog_<?php echo $methodid ?>_tax').modal({backdrop: 'static', keyboard: false});
+			page_loading("hide");
+		});	
+	}
+	
+	function save_<?php echo $methodid ?>_tax(){
+		$('#form_<?php echo $methodid ?>_tax').submit();
+	}
+	
+	var check_submit = 0;
+	function post_<?php echo $methodid ?>_tax(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'Save <?php echo $page_title ?> Tax','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>_tax").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit_tax',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'<?php echo $page_title ?>',data.message);	
+						$('#dialog_<?php echo $methodid ?>_tax').modal('hide');
+						cancel_detail_<?php echo $methodid ?>();
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function delete_detail_<?php echo $methodid ?>_gl(id){
+		if(check_submit == 0) {
+			swal({
+				title: "Confirm Delete <?php echo $page_title ?> GL Detail ?",
+				type: "question",
+				dangerMode: true,
+				showCancelButton: !0,
+				confirmButtonClass: "btn btn-danger m-1",
+				cancelButtonClass: "btn btn-secondary m-1",
+				confirmButtonText: "Confirm",
+				cancelButtonText: "Cancel",
+				backdrop: true,
+				allowOutsideClick : false,
+			}).then((result) => {
+				if (result.value) {
+					page_loading("show",'Delete <?php echo $page_title ?> GL Detail','Please Wait...');
+					$.ajax({
+						url: baseurl+'<?php echo $class_uri ?>/delete_detail_gl',								
+						data: {'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>',cust_trans_detail_id:id},
+						dataType: 'json',
+						method: 'post',
+						success: function(data){
+							page_loading("hide");
+							check_submit = 0;
+							if(data.valid){
+								show_success("show",'Delete <?php echo $page_title ?> Detail',data.message);			
+								$("#table_<?php echo $methodid ?>_detail_gl").trigger('reloadGrid');
+								cancel_detail_<?php echo $methodid ?>_gl();
+								
+								setTimeout(function(){ 
+									$('.tab_scrollbar').getNiceScroll().resize(); 
+								}, 100);
+							} else {
+								show_error("show",'Error',data.message);
+							}
+						},
+						error: function(xhr,error){
+							show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+							check_submit = 0;
+						}
+					});
+				} else if (result.dismiss === swal.DismissReason.cancel) {
+					swal.closeModal();	
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function cancel_detail_<?php echo $methodid ?>_gl(){
+		$('#form_<?php echo $methodid ?>_detail_gl_cust_trans_detail_id').val('');
+		$('#form_<?php echo $methodid ?>_detail_gl_amount').val(0);
+		$('#form_<?php echo $methodid ?>_detail_gl__memo').val('');
+		
+		$('.button_<?php echo $methodid ?>_detail_gl_edit').hide();
+		$('.button_<?php echo $methodid ?>_detail_gl_new').show();	
+		
+		$("#table_<?php echo $methodid ?>_invoice_item").trigger('reloadGrid');
+	}
+	
+	function set_tax(){
+		$('#dialog_<?php echo $methodid ?>_tax').load('<?php echo base_url(); ?><?php echo $class_uri ?>/loaddata_tax',function(){
+			$('#dialog_<?php echo $methodid ?>_tax').modal();
+		});		
+	}
+</script>

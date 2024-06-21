@@ -1,0 +1,9 @@
+{
+"webname":"Enterprise Cyber Cycle"
+,"webdescription":"Enterprise Cyber Cycle"
+,"keywords":"Enterprise Cyber Cycle"
+,"description":"Enterprise Cyber Cycle"
+,"email":"info@palapa.co.id"
+,"template":"webmin"
+,"websocket":"ws://192.168.43.117:3000"
+}

@@ -1,0 +1,294 @@
+<script type="text/javascript">
+	var new_bom = 1;
+	var bom_id = 0;
+    // alert($form_param);
+	// alert(".form_<?php echo $methodid ?>");
+	$(".form_tab_<?php echo $methodid ?>").on("click", "a", function (e) {
+        e.preventDefault();
+		setTimeout(function(){ 
+			$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+			$("#table_<?php echo $methodid ?>_detail").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail').width() - 20,true).trigger('resize');
+			$('.tab_scrollbar').getNiceScroll().resize(); 
+		}, 500);
+    });
+
+ 	function edit_<?php echo $methodid?>(id){
+	//	alert("edit");
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_bom'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				//alert("tes"+data[0].bom_id);
+				page_loading("hide");
+				$('.button_<?php echo $methodid ?>_detail_edit').hide();
+				$('.button_<?php echo $methodid ?>_detail_new').show();	
+				
+				new_bom = 0;
+				bom_id = data[0].bom_id;
+				
+				$('#form_<?php echo $methodid ?>_bom_id').val(data[0].bom_id);
+				$('#form_<?php echo $methodid ?>_detail_bom_id').val(data[0].bom_id);
+				$('#form_<?php echo $methodid ?>_bom_code').val(data[0].bom_code);
+				$('#form_<?php echo $methodid ?>_bom_name').val(data[0].bom_name);
+				
+				change_form_<?php echo $methodid ?>_fg_item_id(data[0].fg_item_id);
+				
+				$("#tab_<?php echo $methodid; ?>_detail").attr("data-toggle","tab");
+				$("#tab_<?php echo $methodid; ?>_detail").removeClass( "tab_disabled");
+				setTimeout(function(){ 
+					$('.tab_scrollbar').getNiceScroll().resize(); 
+				}, 100);
+			}
+		});
+	}
+	
+	function cancel_<?php echo $methodid ?>(){
+		$('#panel_content_<?php echo $methodid ?>').show();
+		$('#panel_content_form_<?php echo $methodid ?>').hide();
+		$("#table_<?php echo $methodid ?>").trigger('reloadGrid');
+	}
+	
+	function save_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>').submit();
+	}
+	
+	var jvalidate = $("#form_<?php echo $methodid ?>").validate({
+		ignore: [],
+		rules: {                                            
+			bom: {
+				required: true
+			}
+		} 
+	});
+	
+	var check_submit = 0;
+	function post_<?php echo $methodid ?>(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						if(new_bom == 1){
+							new_bom = 0;
+							$("#tab_<?php echo $methodid; ?>_detail").attr("data-toggle","tab");
+							$("#tab_<?php echo $methodid; ?>_detail").removeClass( "tab_disabled");
+							$("#tab_<?php echo $methodid; ?>_detail").click();
+							bom_id = data.bom_id;
+							$('#form_<?php echo $methodid ?>_bom_id').val(bom_id);
+							$('#form_<?php echo $methodid ?>_detail_bom_id').val(bom_id);
+								
+							setTimeout(function(){ 
+								$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+								$("#table_<?php echo $methodid ?>_detail").setGridWidth($('.grid_container_<?php echo $methodid; ?>_detail').width() - 20,true).trigger('resize');
+								$('.tab_scrollbar').getNiceScroll().resize(); 
+							}, 500);
+
+						} else {
+							new_bom = 1;
+							$('#panel_content_<?php echo $methodid ?>').show();
+							$('#panel_content_form_<?php echo $methodid ?>').hide();
+							$("#table_<?php echo $methodid ?>").trigger('reloadGrid');
+						}
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+		
+	var jvalidate2 = $("#form_<?php echo $methodid ?>_bom_detail").validate({
+		ignore: [],
+		rules: {                                            
+			item_id: {
+				required: true
+			}
+		} 
+	});
+	
+	var check_submit = 0;
+	function add_<?php echo $methodid ?>(){
+		new_tax_group = 0;
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'Detail','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>_detail").serialize();
+			//alert(baseurl+'<?php echo $class_uri ?>/post_add_edit_detail');
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit_detail',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					//alert(data);
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'<?php echo $page_title ?> Detail',data.message);	
+						
+						$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+						cancel_detail_<?php echo $methodid ?>();	
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function edit_detail_<?php echo $methodid ?>(bom_detail_id){
+		//alert("edit detil");
+		page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_bom_detail'
+				,id : bom_detail_id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				page_loading("hide");
+				$('.button_<?php echo $methodid ?>_detail_edit').show();
+				$('.button_<?php echo $methodid ?>_detail_new').hide();		
+				
+				$('#form_<?php echo $methodid ?>_detail_bom_detail_id').val(data[0].bom_detail_id);
+				$('#form_<?php echo $methodid ?>_detail_mat_quantity').val(data[0].mat_quantity);
+				
+				change_form_<?php echo $methodid ?>_detail_mat_item_id(data[0].mat_item_id);
+			}
+		});
+	}
+	
+	function delete_detail_<?php echo $methodid ?>(bom_detail_id){
+		if(check_submit == 0) {
+			swal({
+				title: "Confirm Delete <?php echo $page_title ?> Detail ?",
+				type: "question",
+				dangerMode: true,
+				showCancelButton: !0,
+				confirmButtonClass: "btn btn-danger m-1",
+				cancelButtonClass: "btn btn-secondary m-1",
+				confirmButtonText: "Confirm",
+				cancelButtonText: "Cancel",
+				backdrop: true,
+				allowOutsideClick : false,
+			}).then((result) => {
+				if (result.value) {
+					page_loading("show",'Delete <?php echo $page_title ?> Detail','Please Wait...');
+					$.ajax({
+						url: baseurl+'<?php echo $class_uri ?>/delete_detail',								
+						data: {'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>',bom_detail_id:bom_detail_id},
+						dataType: 'json',
+						method: 'post',
+						success: function(data){
+							page_loading("hide");
+							check_submit = 0;
+							if(data.valid){
+								show_success("show",'Delete <?php echo $page_title ?> Detail',data.message);			
+								$("#table_<?php echo $methodid ?>_detail").trigger('reloadGrid');
+								cancel_detail_<?php echo $methodid ?>();
+								
+								setTimeout(function(){ 
+									$('.tab_scrollbar').getNiceScroll().resize(); 
+								}, 100);
+							} else {
+								show_error("show",'Error',data.message);
+							}
+						},
+						error: function(xhr,error){
+							show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+							check_submit = 0;
+						}
+					});
+				} else if (result.dismiss === swal.DismissReason.cancel) {
+					swal.closeModal();	
+					check_submit = 0;
+				}
+			});
+		}
+	}
+	
+	function cancel_detail_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>_detail_bom_detail_id').val('');
+		$('#form_<?php echo $methodid ?>_detail_mat_quantity').val(1);
+		
+		$('.button_<?php echo $methodid ?>_detail_edit').hide();
+		$('.button_<?php echo $methodid ?>_detail_new').show();				
+	}
+	
+	
+	function change_mat_item(mat_item_id){
+	//	alert(baseurl+'<?php echo $class_uri ?>/loaddata_asset');
+		$.ajax({
+			url: baseurl+'loader',
+		//	url: baseurl+'<?php echo $class_uri ?>/loaddata_asset',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param:'get_bom_assets'
+				,id: mat_item_id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+					//page_loading("hide");
+				//alert(data[0]);
+				console.log(data[0]['item_category_name']);
+					//if(data){
+					if(data[0].msg==='kosong'){
+					//	alert("kosong");
+				    	$('#form_<?php echo $methodid ?>_detail_mat_asset_id').val("0");
+						$('#form_<?php echo $methodid ?>_category_mat_category_id').val("category");
+					}else{
+					    $('#form_<?php echo $methodid ?>_detail_mat_asset_id').val(data.stock);
+						$('#form_<?php echo $methodid ?>_category_mat_category_id').val(data[0]['item_category_name']);
+						$('#form_<?php echo $methodid ?>_detail_mat_keluar').val(data[0]['quantity']);
+						//alert("ada");
+					}
+					//$('#form_<?php echo $methodid ?>_detail_mat_asset_id').val(data[0].stock);
+			
+			}
+			//,error: function(xhr,error){
+			//				show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try againxx');
+			//				check_submit = 0;
+			//			}
+		});
+	}
+	
+	$('#form_<?php echo $methodid ?>_detail_mat_item_id').on('change', function (event, clickedIndex, newValue, oldValue) {
+		item_id = $('#form_<?php echo $methodid ?>_detail_mat_item_id').val();
+		//item_id = $('#form_<?php echo $methodid ?>_bom_detail_id').val();
+		//alert(item_id);
+	  if(item_id !== 'undefined'){
+			 // if( item_id !== ''){
+			mat_item_id = $(this).val();
+	   	  //  alert(mat_item_id);
+			change_mat_item(mat_item_id);
+		   
+	   }
+		
+	});
+</script>

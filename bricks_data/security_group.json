@@ -1,0 +1,6 @@
+[{"param":"webname","value":"Masternode Marketplace","type":"text","default":"webname","description":null,"typeid":"1","sort":"0","publish":"1"}
+,{"param":"webdescription","value":"Masternode Marketplace","type":"textarea","default":"webdescription","description":null,"typeid":"2","sort":"1","publish":"1"}
+,{"param":"keywords","value":"Masternode Marketplace","type":"textarea","default":"keywords","description":null,"typeid":"2","sort":"2","publish":"1"}
+,{"param":"description","value":"Masternode Marketplace","type":"text","default":"description","description":null,"typeid":"1","sort":"3","publish":"1"}
+,{"param":"email","value":"nodes.fun@gmail.com","type":"text","default":"support@domain.com","description":null,"typeid":"1","sort":"4","publish":"1"}
+,{"param":"tawk.to_api","value":"","type":"text","default":"5","description":null,"typeid":"1","sort":"5","publish":"1"}]

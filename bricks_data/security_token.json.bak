@@ -1,0 +1,40 @@
+{
+"Update System Parameter":1
+,"Add / Update Currencies":2
+,"Add / Update Currencies Rate":3
+,"Add / Update Taxes":4
+,"Add / Update Tax Group":5
+,"Add / Update KPPBC":6
+,"Add / Update Port":7
+,"Add / Update Warehouse":8
+,"Add / Update UOM":9
+,"Add / Update Package":10
+,"Add / Update Hs Code":11
+,"Add / Update Item Category":12
+,"Add / Update Item Base":13
+,"Add / Update Item Detail":14
+,"Add / Update Work Center":15
+,"Add / Update Work Process":16
+,"Add / Update BOM":17
+,"Add / Update BOM Process":18
+,"Add / Update Supplier":19
+,"Add / Update Customer":20
+,"Add / Update Journal Entry":21
+,"Add / Update GL Account Section":22
+,"Add / Update GL Account Group":23
+,"Add / Update GL Account":24
+,"Add / Update Purchase Request":25
+,"External Report Pabean In":26
+,"External Report Pabean Out":27
+,"External Report Pabean Out":28
+,"External Report WIP":29
+,"External Report Mutasi Bahan Baku":30
+,"External Report Mutasi Scrap":31
+,"External Report Mutasi Barang Jadi":32
+,"External Report Mutasi Mesin":33
+,"Trial Balance":34
+,"Balance Sheet":35
+,"Profit And Loss":36
+,"CashFlow Statement":37
+,"Module Monitoring":52
+}

@@ -1,0 +1,77 @@
+?><script type="text/javascript">  
+	var jvalidate = $("#form_<?php echo $methodid ?>").validate({
+		ignore: [],
+		rules: {                                            
+			gl_account_group: {
+				required: true
+			}
+		} 
+	});
+	
+	function change_warehouse(id){
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_warehouse'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				$('#form_<?php echo $methodid ?>_warehouse_id').val(data[0]);
+				$('#form_<?php echo $methodid ?>_warehouse_code').prop('readonly', true);
+				
+				$('#form_<?php echo $methodid ?>_warehouse_id').val(data[0].warehouse_id);
+				$('#form_<?php echo $methodid ?>_warehouse_code').val(data[0].warehouse_code);
+				$('#form_<?php echo $methodid ?>_warehouse_name').val(data[0].warehouse_name);
+				
+				setTimeout(function(){ 
+					$('.tab_scrollbar').getNiceScroll().resize(); 
+				}, 100);
+			}
+		});
+	}
+	
+	function cancel_<?php echo $methodid ?>(){
+		$('#panel_content_<?php echo $methodid ?>').show();
+		$('#panel_content_form_<?php echo $methodid ?>').hide();
+	}
+	
+	function save_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>').submit();
+	}
+	
+	var check_submit = 0;
+	function post_<?php echo $methodid ?>(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'<?php echo $page_title ?>','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'<?php echo $page_title ?>',data.message);	
+						$('#panel_content_<?php echo $methodid ?>').show();
+						$('#panel_content_form_<?php echo $methodid ?>').hide();
+						table_<?php echo $methodid ?>.api()
+							.ajax
+							.reload();
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+</script>

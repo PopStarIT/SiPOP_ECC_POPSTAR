@@ -1,0 +1,8 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+Class Home extends CI_Controller { 
+	function __construct(){ 
+		parent::__construct(); 
+	} 
+	// function index(){		// $this->rpc_service->setSP("public.gui_menu_tools");		// $this->rpc_service->addField('menu_id','1121000');				// echo "<pre>";		// $result = $this->rpc_service->resultJSON();		// $result_data = json_decode($result['data'],TRUE);		// print_r($result_data);
+	// }		function index(){		//var_dump("dash ");		$component['loadlayout'] = true;		$component['page_title'] = 'Home';		$component['view_load'] = 'home';		$component['load_js'][] = 'home';				$this->authentication->cplayout($component);	}		function dashboard(){		$component['loadlayout'] = true;		$component['view_load'] = 'dashboard';		$component['load_js'][] = 'dashboard';		//var_dump("dash ");	   $this->authentication->ajaxlayout($component);			}
+}

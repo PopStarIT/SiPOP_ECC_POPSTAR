@@ -1,0 +1,4 @@
+<?php $this->load->view($path_template.'/library/javascript/dashboard_table2'); ?>
+<script type="text/javascript">
+alert($('#form_<?php echo $methodid ?>_detail_style_spec_header_id').val());
+</script>

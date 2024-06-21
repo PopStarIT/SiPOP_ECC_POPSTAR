@@ -1,0 +1,121 @@
+<script type="text/javascript">  
+	function edit_<?php echo $methodid?>(id){
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_item_base'
+				,id : id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+				
+				$('#form_<?php echo $methodid ?>_item_base_id').val(data[0].item_base_id);
+				$('#form_<?php echo $methodid ?>_item_base_code').val(data[0].item_base_code);
+				$('#form_<?php echo $methodid ?>_item_base_name').val(data[0].item_base_name);
+				$('#form_<?php echo $methodid ?>_merk').val(data[0].merk);
+				$('#form_<?php echo $methodid ?>_tipe').val(data[0].tipe);
+				$('#form_<?php echo $methodid ?>_spesifikasi_lain').val(data[0].spesifikasi_lain);
+			
+				change_form_<?php echo $methodid ?>_item_category_id(data[0].item_category_id);
+				change_form_<?php echo $methodid ?>_tax_group_id(data[0].tax_group_id);
+				change_form_<?php echo $methodid ?>_mb_flag_id(data[0].mb_flag_id);
+				change_form_<?php echo $methodid ?>_uom_id(data[0].uom_id);
+				change_form_<?php echo $methodid ?>_sales_gl_account_id(data[0].sales_gl_account_id);
+				change_form_<?php echo $methodid ?>_inventory_gl_account_id(data[0].inventory_gl_account_id);
+				change_form_<?php echo $methodid ?>_cogs_gl_account_id(data[0].cogs_gl_account_id);
+				change_form_<?php echo $methodid ?>_adjustment_gl_account_id(data[0].adjustment_gl_account_id);
+				change_form_<?php echo $methodid ?>_wip_gl_account_id(data[0].wip_gl_account_id);
+				change_form_<?php echo $methodid ?>_custom_item_kite_type_id(data[0].custom_item_kite_type_id);
+				change_form_<?php echo $methodid ?>_hs_id(data[0].hs_id);
+			}
+		});
+	}
+	
+	function change_item_category(item_category_id){
+		$.ajax({
+			url: baseurl+'loader',
+			data: {
+				'<?php echo $this->security->get_csrf_token_name() ?>':'<?php echo $this->security->get_csrf_hash() ?>'
+				,param: 'data_item_category'
+				,id : item_category_id
+			},
+			dataType: 'json',
+			method: 'post',
+			success: function(data){
+			//	alert(data[0]);
+				if (typeof data[0] !== 'undefined'){
+					change_form_<?php echo $methodid ?>_tax_group_id(data[0].tax_group_id);
+					change_form_<?php echo $methodid ?>_mb_flag_id(data[0].mb_flag_id);
+					change_form_<?php echo $methodid ?>_uom_id(data[0].uom_id);
+					change_form_<?php echo $methodid ?>_sales_gl_account_id(data[0].sales_gl_account_id);
+					change_form_<?php echo $methodid ?>_inventory_gl_account_id(data[0].inventory_gl_account_id);
+					change_form_<?php echo $methodid ?>_cogs_gl_account_id(data[0].cogs_gl_account_id);
+					change_form_<?php echo $methodid ?>_adjustment_gl_account_id(data[0].adjustment_gl_account_id);
+					change_form_<?php echo $methodid ?>_wip_gl_account_id(data[0].wip_gl_account_id);
+				}				
+			}
+		});
+	}
+	
+	$('#form_<?php echo $methodid ?>_item_category_id').on('change', function (event, clickedIndex, newValue, oldValue) {
+		item_base_id = $('#form_<?php echo $methodid ?>_item_base_id').val();
+		alert(item_base_id);
+		if(item_base_id === ''){
+			item_category_id = $(this).val();
+			//alert("test"+item_category_id)
+			change_item_category(item_category_id);
+		}
+		
+	});
+	
+	var jvalidate = $("#form_<?php echo $methodid ?>").validate({
+		ignore: [],
+		rules: {                                            
+			item_group: {
+				required: true
+			}
+		} 
+	});
+	
+	function cancel_<?php echo $methodid ?>(){
+		$('#panel_content_<?php echo $methodid ?>').show();
+		$('#panel_content_form_<?php echo $methodid ?>').hide();
+	}
+	
+	function save_<?php echo $methodid ?>(){
+		$('#form_<?php echo $methodid ?>').submit();
+	}
+	
+	var check_submit = 0;
+	function post_<?php echo $methodid ?>(){
+		if(check_submit == 0) {
+			check_submit = 1;
+			page_loading("show",'Item','Please Wait...');
+			var data = $("#form_<?php echo $methodid ?>").serialize();
+			$.ajax({
+				url: baseurl+'<?php echo $class_uri ?>/post_add_edit',
+				data: data,
+				dataType: 'json',
+				method: 'post',
+				success: function(data){
+					page_loading("hide");
+					check_submit = 0;
+					if(data.valid){
+						show_success("show",'Item',data.message);	
+						$('#panel_content_<?php echo $methodid ?>').show();
+						$('#panel_content_form_<?php echo $methodid ?>').hide();
+						$("#table_<?php echo $methodid ?>").trigger('reloadGrid');
+					} else {
+						show_error("show",'Error',data.message);
+					}
+				},
+				error: function(xhr,error){
+					show_error("show",xhr.status.toString() + ' ' + xhr.statusText,'Please try again');
+					check_submit = 0;
+				}
+			});
+		}
+	}
+</script>

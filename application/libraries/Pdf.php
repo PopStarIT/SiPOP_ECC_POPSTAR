@@ -1,0 +1,62 @@
+<?php 
+//if(!defined('BASEPATH')) exit('No direct script access allowed');
+require_once dirname(__FILE__).'/tcpdf/tcpdf.php';
+class Pdf extends TCPDF
+{
+    function __construct()
+    {
+		parent::__construct();
+        //include_once APPPATH . '/third_party/fpdf/fpdf.php';
+    }
+	
+	 public function Header()
+    {
+        // $image_file = base_url('/img/user-3.jpg');
+        //    $image_file = K_PATH_IMAGES . 'logoPT.png';
+        //   $this->Image($image_file, 35, 10, 40, 10, 'PNG', '', 'M', false, 300, '', false, false, 0, false, false, false);
+        // Set font
+        $this->SetFont('helvetica', 'B', 22);
+        // $this->SetTextColor(127);
+        // Title
+        $this->Cell(185, 0, "POP STAR, PT", 0, 1, 'C', 0, '', 1);
+        //  $this->SetFont('helvetica', '', 9);
+        // $this->SetTextColor(127);
+        // $this->Ln(2);
+        // // Title
+        // $this->MultiCell(80, 30, 'Jalan Nanjung KM.3 No.99, Lagadar, Kec. Margaasih, Kabupaten Bandung, Jawa Barat 40216, Indonesia', 0, 'l', 0, 0, '', 3, true);
+        $style = array('width' => 0.8, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(0, 0, 0));
+        $this->Line(5, 15, 200, 15, $style);
+
+        $style2 = array('width' => 0.2, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(0, 0, 0));
+        $this->Line(5, 16, 200, 16, $style2);
+    }
+
+    // Page footer
+    public function Footer()
+    {
+        // Position at 15 mm from bottom
+      //  $this->SetY(-15);
+        // Set font
+      //  $this->SetFont('helvetica', 'I', 8);
+        // Page number
+     //   $this->Cell(0, 10,  'surat jalan/' . getRomawi(date('m')) . '/' . date('Y') . '/ECC system', 0, false, 'R', 0, '', 0, false, 'T', 'M');
+		
+			$w_page = isset($this->l['w_page']) ? $this->l['w_page'].' ' : '';
+		if (empty($this->pagegroups)) {
+			$pagenumtxt = $w_page.$this->getAliasNumPage().' / '.$this->getAliasNbPages();
+		} else {
+			$pagenumtxt = $w_page.$this->getPageNumGroupAlias().' / '.$this->getPageGroupAlias();
+		}
+		
+		//	$this->SetY($cur_y);
+		//Print page number
+		if ($this->getRTL()) {
+		//$this->SetX($this->original_rMargin);
+			$this->Cell(0, 0, $pagenumtxt, 'T', 0, 'L');
+		} else {
+		//	$this->SetX($this->original_lMargin);
+			//$this->Cell(0, 0, $this->getAliasRightShift().$pagenumtxt, 'T', 0, 'R'); //---------Ada garis diatas
+			$this->Cell(0, 0, $this->getAliasRightShift().$pagenumtxt,0, false, 'R', 0, '', 0, false, 'T', 'M');
+		}
+    }
+}

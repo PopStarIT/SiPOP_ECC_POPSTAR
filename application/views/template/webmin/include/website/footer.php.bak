@@ -1,0 +1,9 @@
+?><!-- FOOTER -->
+<footer id="footer">
+	<div class="copyright">
+		<div class="container">
+			&copy; <?php echo date('Y') ?> <?php echo isset($base_config['webname']) ? html_entity_decode($base_config['webname']) : "webname";  ?>
+		</div>
+	</div>
+</footer>
+<!-- /FOOTER -->
